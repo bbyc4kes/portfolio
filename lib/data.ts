@@ -7,23 +7,23 @@ import reactfoodImg from '@/public/react-food.png'
 export const links = [
   {
     name: 'Home',
-    hash: '#home',
+    id: 'home',
   },
   {
     name: 'About',
-    hash: '#about',
+    id: 'about',
   },
   {
     name: 'Projects',
-    hash: '#projects',
+    id: 'projects',
   },
   {
     name: 'Skills',
-    hash: '#skills',
+    id: 'skills',
   },
   {
     name: 'Contact',
-    hash: '#contact',
+    id: 'contact',
   },
 ] as const
 
