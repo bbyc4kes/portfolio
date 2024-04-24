@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <section
-      className="flex min-h-screen scroll-mt-72 justify-center"
+      className="flex min-h-screen scroll-mt-36 justify-center"
       id="home"
       ref={ref}
     >
