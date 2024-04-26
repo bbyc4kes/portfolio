@@ -16,11 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-gray-50 text-gray-950 relative pt-12 sm:pt-24">
-        <div className="flex flex-col min-h-screen">
+      <body className="flex justify-center items-center bg-gray-50 text-gray-950 relative pt-12 sm:pt-24">
+        <div className="flex flex-col min-h-screen w-full">
           <ActiveSectionContextProvider>
             <Header />
-            <div className="flex mx-auto">{children}</div>
+            {children}
           </ActiveSectionContextProvider>
         </div>
       </body>
