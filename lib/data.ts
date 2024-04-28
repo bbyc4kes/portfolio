@@ -27,11 +27,18 @@ export const links = [
   },
 ] as const
 
+export const images = {
+  campwithusImg,
+  carcatalogImg,
+  filedriveImg,
+  projectmanagementImg,
+  reactfoodImg,
+}
 export const projectsData = [
   {
     title: 'FileDrive',
     description:
-      'FileDrive - File Storage App built using Next.js, leveraging Convex for decentralized storage, and TypeScript for robust code quality. With Convex and Clerk, manage user roles and permissions efficiently, controlling data flow and mutations seamlessly. Experience streamlined file management with our comprehensive solution.',
+      'FileDrive - Next.js app using Convex for decentralized storage, TypeScript for code quality, and Clerk for user management.',
     tags: [
       'React',
       'TypeScript',
@@ -46,14 +53,14 @@ export const projectsData = [
   {
     title: 'AutoHub',
     description:
-      'AutoHub is a sleek car catalog site built on TypeScript, Tailwind CSS, and Next.js. It delivers a seamless browsing experience, powered by efficient data fetching with Axios. The site integrates Headless UI for accessibility and user interaction.',
+      'AutoHub - Car catalog site built on TypeScript, Tailwind CSS, and Next.js, with efficient data fetching using Axios.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Axios', 'Headless'],
     imageUrl: carcatalogImg,
   },
   {
     title: 'CampWithUs',
     description:
-      'As CampWithUs lead developer, Maksym Azimov wore multiple hats, handling design, development, and project management. He architected the backend with Express.js, crafted frontend features with HTML5/CSS, and facilitated smooth client-server communication via AJAX. Maksym excelled in integrating third-party services, improving user experience, and executing CRUD operations efficiently. ',
+      'Architected backend with Express.js, frontend features with HTML5/CSS, and facilitated smooth client-server communication via AJAX.',
     tags: [
       'JavaScript',
       'Express.js',
@@ -67,14 +74,14 @@ export const projectsData = [
   {
     title: 'ProjectManagement',
     description:
-      'Project Management Project" is a robust web application showcasing essential functionalities of React, Tailwind CSS, and CSS. Leveraging the power of React for dynamic user interfaces, and Tailwind CSS along with custom CSS for styling, this project demonstrates fundamental features for efficient project management. ',
+      'Project Management Project - React app demonstrating core functionalities using Tailwind CSS and custom CSS for styling.',
     tags: ['React', 'Tailwind', 'Framer'],
     imageUrl: projectmanagementImg,
   },
   {
     title: 'ReactFood',
     description:
-      'ReactFood is a food order project spotlighting React Context API for efficient data handling and API integration. Combining fundamental and advanced techniques, it delivers a dynamic user interface, real-time data fetching, and seamless state management for a delightful ordering experience.',
+      'ReactFood - Food order project using React Context API for data handling and API integration.',
     tags: ['React', 'JavaScript', 'Express.js', 'Axios'],
     imageUrl: reactfoodImg,
   },

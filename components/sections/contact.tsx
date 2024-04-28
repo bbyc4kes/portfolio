@@ -7,8 +7,8 @@ export default function Contact() {
 
   return (
     <section
-      className={`w-full min-h-screen bg-gray-500 scroll-mt-36`}
-      id="about"
+      className="w-full min-h-screen bg-gray-500 scroll-mt-36"
+      id="contact"
       ref={ref}
     >
       {inView ? 'contact' : null}
