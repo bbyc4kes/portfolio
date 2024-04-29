@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { smoothScrollTo } from '@/lib/utils'
 import { useActiveSectionContext } from '@/store/active-section-context'
 import { useTheme } from 'next-themes'
+import clsx from 'clsx'
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -24,13 +25,14 @@ export default function Header() {
         <ul className="flex w-[20rem] flex-wrap items-center justify-center gap-y-2 text-[0.9rem] font-medium sm:w-[initial] sm:flex-nowrap sm:gap-5 transition-colors">
           {links.map((link) => (
             <motion.li
-              className={`h-3/4 flex items-center justify-center relative ${
-                activeSection === link.id && theme === 'dark' && 'text-black'
-              } ${
-                activeSection === link.id &&
-                theme === 'light' &&
-                'text-[#001114]'
-              }`}
+              className={clsx(
+                'h-3/4 flex items-center justify-center relative',
+                {
+                  'text-black ': activeSection === link.id && theme === 'dark',
+                  'text-[#001114]':
+                    activeSection === link.id && theme === 'light',
+                }
+              )}
               key={link.id}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
