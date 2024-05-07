@@ -1,8 +1,8 @@
-import campwithusImg from '@/public/camp-with-us.png'
-import carcatalogImg from '@/public/car-catalog.png'
-import filedriveImg from '@/public/file-drive.png'
-import projectmanagementImg from '@/public/project-management.png'
-import reactfoodImg from '@/public/react-food.png'
+import campwithusImg from '@/public/images/camp-with-us.png'
+import carcatalogImg from '@/public/images/car-catalog.png'
+import filedriveImg from '@/public/images/file-drive.png'
+import projectmanagementImg from '@/public/images/project-management.png'
+import reactfoodImg from '@/public/images/react-food.png'
 
 export const links = [
   {
@@ -88,24 +88,25 @@ export const projectsData = [
 ] as const
 
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Git',
-  'Tailwind',
-  'Shadcn',
-  'Headless',
-  'Prisma',
-  'MongoDB',
-  'Redux',
-  'Express',
-  'Cloudinary',
-  'Clerk',
-  'Convex',
-  'Axios',
-  'Framer Motion',
+  ['JavaScript', '/svgs/javascript-js.svg'],
+  ['TypeScript', '/svgs/typescript-icon.svg'],
+  ['React', '/svgs/react.svg'],
+  ['Next.js', '/svgs/nextjs.svg'],
+  ['Node.js', '/svgs/node-js.svg'],
+  ['HTML', '/svgs/file-type-html.svg'],
+  ['CSS', '/svgs/file-type-css.svg'],
+  ['Git', '/svgs/git.svg'],
+  ['Tailwind', '/svgs/tailwind-css.svg'],
+  ['Shadcn', '/svgs/shadcnui.svg'],
+  ['Headless', '/svgs/brand-headlessui.svg'],
+  ['Prisma', '/svgs/file-type-light-prisma.svg'],
+  ['MongoDB', '/svgs/mongodb-original.svg'],
+  ['PostgreSQL', '/svgs/postgresql.svg'],
+  ['Redux', '/svgs/redux-original.svg'],
+  ['Express', '/svgs/express-original.svg'],
+  ['Cloudinary', '/svgs/cloudinary.svg'],
+  ['Clerk', '/svgs/clerk.svg'],
+  ['Axios', '/svgs/axios.svg'],
+  ['Framer', '/svgs/framer.svg'],
+  ['', '/svgs/etc.svg'],
 ] as const

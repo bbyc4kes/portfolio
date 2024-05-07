@@ -34,7 +34,7 @@ export default function Hero() {
         <source src="/layout.mp4" />
       </video>
 
-      <div className="absolute top-1/4 flex flex-col items-start justify-center container tracking-wide">
+      <div className="absolute top-48 flex flex-col items-start justify-center container tracking-wide">
         <div className="relative w-full h-full container">
           <div className="absolute left-0 text-5xl font-extrabold mb-10 text-start h-24 max-w-[400px]">
             <span className="text-5xl font-extrabold mb-10 text-start">
@@ -44,7 +44,7 @@ export default function Hero() {
             <TextAnimation delay={1} baseText={`I'm Maksym`} />
           </div>
           <motion.div
-            className="text-2xl absolute right-0 flex text-center items-center justify-center tracking-wide font-semibold w-[400px] h-[400px] p-4 bg-opacity-90 rounded-full max-h-[400px] bg-[#ffcbb4] border border-black"
+            className="text-2xl absolute right-0 flex text-center items-center justify-center tracking-wide font-semibold w-[400px] h-[400px] p-4 bg-opacity-70 rounded-full max-h-[400px] bg-[#ffcbb4] border-[1px] border-slate-600"
             initial={{ y: -100, x: 0, opacity: 0 }}
             animate={{ y: 0, x: 0, opacity: 1 }}
           >
