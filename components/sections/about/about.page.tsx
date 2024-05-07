@@ -4,13 +4,13 @@ import { useSectionInView } from '@/lib/hooks'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { useActiveSectionContext } from '@/store/active-section-context'
-import portfolioImg from '../../public/images/photo.jpg'
+import portfolioImg from '../../../public/images/photo.jpg'
 import Image from 'next/image'
-import SectionDivider from '../section-divider'
+import SectionDivider from '../../section-divider'
 import { useRef } from 'react'
-import SectionHeading from '../section-heading'
-
-//#90b8fc #84b3fc #7fb1fc
+import SectionHeading from '../../section-heading'
+import Link from 'next/link'
+import { smoothScrollTo } from '@/lib/utils'
 
 export default function About() {
   const { activeSection } = useActiveSectionContext()
@@ -24,9 +24,10 @@ export default function About() {
   })
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1])
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1])
+
   return (
     <motion.section
-      className={`flex flex-col justify-center items-center leading-8 h-[1000px] z-50 w-full`}
+      className={`flex flex-col scroll-mt-24 justify-center items-center leading-8 h-[1000px] z-50 w-full`}
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -55,26 +56,27 @@ export default function About() {
             <br /> I am currently open for Web Development positions.
             <br /> So if you are interested,
             <br />
-            <span
-              className={`text-2xl font-bold ${
-                activeSection === 'about' && theme === 'dark'
-                  ? 'bg-[#ddbea9]'
-                  : 'bg-[#ffcbb4]'
-              }`}
+            <Link
+              href={'contact'}
+              onClick={(e) => {
+                smoothScrollTo({ e, id: 'contact' })
+              }}
             >
-              Contact me!
-            </span>
+              <span className="text-2xl font-bold dark:bg-[#ddbea9] bg-[#ffcbb4]">
+                Contact me!
+              </span>
+            </Link>
           </div>
           <div className="absolute left-0 top-1/4 z-30">
             <div className="relative w-[470px] h-[470px]">
-              <div className="group-hover:opacity-50 transition-opacity absolute inset-0 bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
+              <div className="group-hover:opacity-60 transition-opacity absolute inset-0 bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
               <div className="absolute inset-0">
                 <Image
                   src={portfolioImg}
                   alt="portfolio image"
-                  objectFit="cover"
                   placeholder="blur"
-                  fill
+                  width={470}
+                  height={470}
                   className="rounded-full z-10 w-[470px] h-[470px]"
                 />
               </div>

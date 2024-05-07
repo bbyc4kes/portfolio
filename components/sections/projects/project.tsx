@@ -5,7 +5,6 @@ import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useTheme } from 'next-themes'
-import clsx from 'clsx'
 
 type ProjectProps = (typeof projectsData)[number]
 
@@ -34,13 +33,9 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className={clsx(
-          'max-w-[52rem] border rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] transition sm:group-even:pl-8',
-          {
-            'hover:bg-gray-200': theme === 'light',
-            'hover:bg-gray-700': theme === 'dark',
-          }
-        )}
+        className={
+          'max-w-[52rem] border rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] transition sm:group-even:pl-8 hover:bg-gray-200 dark:hover:bg-gray-700'
+        }
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold uppercase">{title}</h3>
@@ -48,9 +43,7 @@ export default function Project({
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
-                className={`${
-                  theme === 'dark' ? 'bg-[#ddbea9] text-black' : 'bg-[#ffcbb4]'
-                } px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full`}
+                className="dark:bg-[#ddbea9] dark:text-black bg-[#ffcbb4] px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full"
                 key={index}
               >
                 {tag}

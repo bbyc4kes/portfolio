@@ -59,9 +59,7 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
 
   return (
     <motion.span
-      className={`text-2xl font-bold ${
-        theme === 'dark' ? 'bg-[#ddbea9]' : 'bg-[#ffcbb4]'
-      }`}
+      className={'text-[2rem] font-bold bg-[#ffcbb4] dark:bg-[#ddbea9]'}
     >
       {displayText}
     </motion.span>

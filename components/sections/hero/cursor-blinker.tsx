@@ -18,7 +18,7 @@ export default function CursorBlinker() {
     <motion.div
       variants={cursorVariants}
       animate="blinking"
-      className={`inline-block h-8 w-[2px] translate-y-1 rounded-md bg-slate-800`}
+      className={`inline-block h-8 w-[2px] translate-y-2 rounded-md bg-slate-800`}
     />
   )
 }
