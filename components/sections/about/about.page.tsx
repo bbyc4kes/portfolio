@@ -2,8 +2,6 @@
 
 import { useSectionInView } from '@/lib/hooks'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useTheme } from 'next-themes'
-import { useActiveSectionContext } from '@/store/active-section-context'
 import portfolioImg from '../../../public/images/photo.jpg'
 import Image from 'next/image'
 import SectionDivider from '../../section-divider'
@@ -13,8 +11,6 @@ import Link from 'next/link'
 import { smoothScrollTo } from '@/lib/utils'
 
 export default function About() {
-  const { activeSection } = useActiveSectionContext()
-  const { theme } = useTheme()
   const { ref } = useSectionInView('about', 0.3)
   const divRef = useRef<HTMLDivElement>(null)
 
@@ -36,7 +32,7 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <motion.div
-        className="relative w-[980px] h-[800px] overflow-hidden"
+        className="relative lg:w-[980px] lg:h-[800px] overflow-hidden"
         ref={divRef}
         style={{
           scale: scaleProgess,
@@ -44,7 +40,7 @@ export default function About() {
         }}
       >
         <div className="group">
-          <div className="absolute right-0 top-1/3 max-w-[650px] text-lg z-40 font-semibold tracking-wide">
+          <div className="flex flex-col gap-3 relative justify-center items-center text-center lg:text-start lg:block lg:absolute lg:right-0 lg:top-1/3 max-w-96 lg:max-w-[650px] text-md lg:text-lg z-40 font-semibold tracking-wide">
             I’ve had experience with many tools and technologies, but my current
             stack is TypeScript, React, Next.js, Node.js, MongoDB. Based on
             these experiences, I am currently working on various projects.
@@ -62,12 +58,12 @@ export default function About() {
                 smoothScrollTo({ e, id: 'contact' })
               }}
             >
-              <span className="text-2xl font-bold dark:bg-[#ddbea9] bg-[#ffcbb4]">
+              <span className="text-2xl font-bold dark:bg-[#ddbea9] uppercase lg:normal-case bg-[#ffcbb4]">
                 Contact me!
               </span>
             </Link>
           </div>
-          <div className="absolute left-0 top-1/4 z-30">
+          <div className="absolute left-1/3 lg:left-0 lg:top-1/4 z-30">
             <div className="relative w-[470px] h-[470px]">
               <div className="group-hover:opacity-60 transition-opacity absolute inset-0 bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
               <div className="absolute inset-0">

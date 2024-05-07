@@ -35,7 +35,7 @@ export default function TextAnimation({
   }, [])
 
   return (
-    <span className="text-[5rem] font-extrabold mb-10 text-start">
+    <span className="text-[3rem] lg:text-[4rem] h-32 max-w-92 font-extrabold mb-10 text-start">
       <motion.span>{displayText}</motion.span>
       {done && (
         <>

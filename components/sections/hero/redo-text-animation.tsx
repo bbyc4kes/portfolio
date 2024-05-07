@@ -1,7 +1,6 @@
 'use client'
 
 import { motion, useMotionValue, useTransform, animate } from 'framer-motion'
-import { useTheme } from 'next-themes'
 import { useEffect } from 'react'
 
 export interface IRedoTextAnimationProps {
@@ -10,12 +9,11 @@ export interface IRedoTextAnimationProps {
 
 export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0)
-  const { theme } = useTheme()
 
   const texts = [
     'I am writing to you because I want a job.',
     'I am the best candidate for this job.',
-    'In my grand adventure as a seasoned designer...',
+    'In my grand adventure as a seasoned developer...',
     "Knock knock! Who's there? Your new employee!",
     'Walking the tightrope balance of project management...',
     'I find myself compelled to express my interest due to...',
@@ -58,9 +56,7 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   }, [])
 
   return (
-    <motion.span
-      className={'text-[2rem] font-bold bg-[#ffcbb4] dark:bg-[#ddbea9]'}
-    >
+    <motion.span className="lg:text-[2rem] text-[1.5rem] h-32 max-w-92 font-bold bg-[#ffcbb4] dark:bg-[#ddbea9]">
       {displayText}
     </motion.span>
   )

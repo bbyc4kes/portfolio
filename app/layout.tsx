@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/shared/theme/theme-provider'
 import Header from '@/components/header'
 import { ModeToggle } from '@/shared/theme/mode-toggler'
 import { Toaster } from 'react-hot-toast'
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Maksym Azimov | Portfolio',
@@ -40,7 +41,8 @@ export default function RootLayout({
             >
               <Header />
               {children}
-              <div className="fixed left-0 bottom-0 m-8 z-[99]">
+              <Footer />
+              <div className="fixed sm:left-0 sm:bottom-0 sm:top-auto sm:right-auto top-0 right-0 sm:m-8 m-4 z-[99]">
                 <ModeToggle />
               </div>
               <Toaster position="top-right" />

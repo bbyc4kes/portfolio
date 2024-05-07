@@ -49,6 +49,7 @@ export const projectsData = [
       'Tailwind',
     ],
     imageUrl: filedriveImg,
+    link: 'https://github.com/bbyc4kes/file-drive',
   },
   {
     title: 'AutoHub',
@@ -56,6 +57,7 @@ export const projectsData = [
       'AutoHub - Car catalog site built on TypeScript, Tailwind CSS, and Next.js, with efficient data fetching using Axios.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Axios', 'Headless'],
     imageUrl: carcatalogImg,
+    link: 'https://github.com/bbyc4kes/car-catalog-NEXT.js',
   },
   {
     title: 'CampWithUs',
@@ -70,6 +72,7 @@ export const projectsData = [
       'Prisma',
     ],
     imageUrl: campwithusImg,
+    link: 'https://github.com/bbyc4kes/campwithus',
   },
   {
     title: 'ProjectManagement',
@@ -77,6 +80,7 @@ export const projectsData = [
       'Project Management Project - React app demonstrating core functionalities using Tailwind CSS and custom CSS for styling.',
     tags: ['React', 'Tailwind', 'Framer'],
     imageUrl: projectmanagementImg,
+    link: 'https://github.com/bbyc4kes/project-management-project',
   },
   {
     title: 'ReactFood',
@@ -84,6 +88,7 @@ export const projectsData = [
       'ReactFood - Food order project using React Context API for data handling and API integration.',
     tags: ['React', 'JavaScript', 'Express.js', 'Axios'],
     imageUrl: reactfoodImg,
+    link: 'https://github.com/bbyc4kes/reactfood',
   },
 ] as const
 
