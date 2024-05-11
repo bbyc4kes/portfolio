@@ -35,7 +35,7 @@ export default function Project({
       <Link href={link} target="_blank">
         <section
           className={
-            'max-w-[52rem] border rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] transition sm:group-even:pl-8 hover:bg-gray-200 dark:hover:bg-gray-700'
+            'max-w-[52rem] border rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] transition sm:group-even:pl-8 hover:bg-gray-200 dark:hover:bg-darkOcean'
           }
         >
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">

@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <motion.section
-      className={`flex flex-col scroll-mt-24 justify-center items-center leading-8 h-[1000px] z-50 w-full`}
+      className="flex flex-col scroll-mt-26 justify-center items-center leading-8 h-[1200px] z-50 w-full dark:bg-darkBg dark:text-white"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <motion.div
-        className="relative lg:w-[980px] lg:h-[800px] overflow-hidden"
+        className="relative lg:w-[980px] lg:h-[700px] overflow-hidden"
         ref={divRef}
         style={{
           scale: scaleProgess,

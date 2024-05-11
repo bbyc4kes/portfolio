@@ -12,14 +12,15 @@ export function ModeToggle() {
   const hasMounted = useHasMounted()
 
   const toggleTheme = () => {
-    if (hasMounted && theme === 'dark') {
-      setTheme('light')
-    } else {
-      setTheme('dark')
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light')
   }
   return (
-    <Button variant="outline" size="icon" onClick={toggleTheme}>
+    <Button
+      className="dark:bg-darkBg opacity-95 dark:text-white"
+      variant="outline"
+      size="icon"
+      onClick={toggleTheme}
+    >
       {hasMounted && theme === 'light' ? (
         <Sun className="h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
       ) : (
