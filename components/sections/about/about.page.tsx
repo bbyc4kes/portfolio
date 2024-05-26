@@ -42,12 +42,13 @@ export default function About() {
         <div className="group">
           <div className="flex flex-col gap-3 relative justify-center items-center text-center lg:text-start lg:block lg:absolute lg:right-0 lg:top-1/3 max-w-96 lg:max-w-[650px] text-md lg:text-lg z-40 font-semibold tracking-wide">
             I’ve had experience with many tools and technologies, but my current
-            stack is TypeScript, React, Next.js, Node.js, MongoDB. Based on
-            these experiences, I am currently working on various projects.
+            stack is TypeScript, React, Next.js, Node.js, MongoDB/PostgreSQL,
+            Prisma. Based on these experiences, I am currently working on
+            various projects.
             <br />
             <br /> My goal as a Web Developer is to create a bridge between a
-            product and its users. I build this bridge that has experiences and
-            stories that people can empathize and interact with.
+            product and its users. I build this bridge using latest technologies
+            and applying my problem-solving skills.
             <br />
             <br /> I am currently open for Web Development positions.
             <br /> So if you are interested,
