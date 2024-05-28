@@ -4,7 +4,7 @@ import React from 'react'
 import { useSectionInView } from '@/lib/hooks'
 import { projectsData } from '@/lib/data'
 import Project from './project'
-import SectionHeading from '../../section-heading'
+import SectionHeading from '../../shared/section-heading'
 
 export default function Projects() {
   const { ref } = useSectionInView('projects', 0.25)

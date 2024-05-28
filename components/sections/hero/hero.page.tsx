@@ -1,7 +1,7 @@
 'use client'
 
 import 'next-cloudinary/dist/cld-video-player.css'
-import SectionDivider from '../../section-divider'
+import SectionDivider from '../../shared/section-divider'
 import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import TextAnimation from './text-animation'

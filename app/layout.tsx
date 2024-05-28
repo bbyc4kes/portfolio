@@ -3,11 +3,11 @@ import { Montserrat as FontMontserrat } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import ActiveSectionContextProvider from '@/store/active-section-context'
 import './globals.css'
-import { ThemeProvider } from '@/shared/theme/theme-provider'
-import Header from '@/components/header'
-import { ModeToggle } from '@/shared/theme/mode-toggler'
+import { ThemeProvider } from '@/theme/theme-provider'
+import Header from '@/components/shared/header'
 import { Toaster } from 'react-hot-toast'
-import Footer from '@/components/footer'
+import Footer from '@/components/shared/footer'
+import { ModeToggle } from '@/theme/mode-toggler'
 
 export const metadata: Metadata = {
   title: 'Maksym Azimov | Portfolio',

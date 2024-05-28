@@ -3,9 +3,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks'
-import { sendEmail } from '@/app/actions/sendEmail'
+import { sendEmail } from '@/lib/actions/sendEmail'
 import SubmitBtn from './submitBtn'
-import SectionHeading from '@/components/section-heading'
+import SectionHeading from '@/components/shared/section-heading'
 import toast from 'react-hot-toast'
 
 export default function Contact() {
