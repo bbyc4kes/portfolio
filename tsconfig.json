@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "typeRoots": ["lib"],
+    "typeRoots": ["lib", "actions", "node_modules/actions"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
