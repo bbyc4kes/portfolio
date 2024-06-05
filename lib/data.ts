@@ -3,6 +3,8 @@ import carcatalogImg from '@/public/images/car-catalog.png'
 import filedriveImg from '@/public/images/file-drive.png'
 import projectmanagementImg from '@/public/images/project-management.png'
 import reactfoodImg from '@/public/images/react-food.png'
+import surgeImg from '@/public/images/surge.png'
+import portfolioImg from '@/public/images/portfolio.png'
 
 export const links = [
   {
@@ -52,6 +54,39 @@ export const projectsData = [
     link: 'https://github.com/bbyc4kes/file-drive',
   },
   {
+    title: 'Surge',
+    description:
+      ' SaaS Website Builder. Built using Next.js 14, TypeScript, Stripe Connect, MySQL, Prisma and other technologies.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'MySQL',
+      'Clerk',
+      'Stripe Connect',
+      'Shadcn',
+      'Tailwind',
+    ],
+    imageUrl: surgeImg,
+    link: 'https://github.com/bbyc4kes/surge',
+  },
+  {
+    title: 'Portfolio',
+    description:
+      'FileDrive - Next.js app using Convex for decentralized storage, TypeScript for code quality, and Clerk for user management.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Framer Motion',
+      'Cloudinary',
+      'React Email',
+      'Tailwind',
+    ],
+    imageUrl: portfolioImg,
+    link: 'https://github.com/bbyc4kes/portfolio',
+  },
+  {
     title: 'AutoHub',
     description:
       'AutoHub - Car catalog site built on TypeScript, Tailwind CSS, and Next.js, with efficient data fetching using Axios.',
@@ -81,14 +116,6 @@ export const projectsData = [
     tags: ['React', 'Tailwind', 'Framer'],
     imageUrl: projectmanagementImg,
     link: 'https://github.com/bbyc4kes/project-management-project',
-  },
-  {
-    title: 'ReactFood',
-    description:
-      'ReactFood - Food order project using React Context API for data handling and API integration.',
-    tags: ['React', 'JavaScript', 'Express.js', 'Axios'],
-    imageUrl: reactfoodImg,
-    link: 'https://github.com/bbyc4kes/reactfood',
   },
 ] as const
 
