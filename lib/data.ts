@@ -169,6 +169,7 @@ export const skillsData = [
   ['Prisma', '/svgs/file-type-light-prisma.svg'],
   ['MongoDB', '/svgs/mongodb-original.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
+  ['MySQL', '/svgs/MySQL.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
   ['Docker', '/svgs/Docker.svg'],
   ['Clerk', '/svgs/clerk.svg'],
