@@ -1,3 +1,5 @@
+import React from 'react'
+
 import campwithusImg from '@/public/images/camp-with-us.png'
 import carcatalogImg from '@/public/images/car-catalog.png'
 import filedriveImg from '@/public/images/file-drive.png'
@@ -5,6 +7,11 @@ import projectmanagementImg from '@/public/images/project-management.png'
 import reactfoodImg from '@/public/images/react-food.png'
 import surgeImg from '@/public/images/surge.png'
 import portfolioImg from '@/public/images/portfolio.png'
+import {
+  BookIcon,
+  BriefcaseBusinessIcon,
+  LaptopMinimalIcon,
+} from 'lucide-react'
 
 export const links = [
   {
@@ -20,12 +27,40 @@ export const links = [
     id: 'projects',
   },
   {
+    name: 'Experience',
+    id: 'experience',
+  },
+  {
     name: 'Skills',
     id: 'skills',
   },
   {
     name: 'Contact',
     id: 'contact',
+  },
+] as const
+
+export const experiencesData = [
+  {
+    title: 'WhirrCrew',
+    location: 'Prague, Czechia',
+    description: `Front-end Web Develpoer position. Working on various projects with AI integration.`,
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Jun 2024 - Present',
+  },
+  {
+    title: 'Self-education',
+    location: 'Czechia',
+    description: `Stying Web Development and Software Engineering, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
+    icon: React.createElement(LaptopMinimalIcon),
+    date: 'Nov 2023 - Present',
+  },
+  {
+    title: 'NAU',
+    location: 'Kyiv, Ukraine',
+    description: `Bachelor's degree in Cybersecurity. Studying on the faculty of Cyber Security and Software Engineering.`,
+    icon: React.createElement(BookIcon),
+    date: 'Sep 2022 - Present',
   },
 ] as const
 
@@ -36,11 +71,12 @@ export const images = {
   projectmanagementImg,
   reactfoodImg,
 }
+
 export const projectsData = [
   {
     title: 'FileDrive',
     description:
-      'FileDrive - Next.js app using Convex for decentralized storage, TypeScript for code quality, and Clerk for user management.',
+      'A platform for decentralized file storage with robust user management.',
     tags: [
       'React',
       'TypeScript',
@@ -56,7 +92,7 @@ export const projectsData = [
   {
     title: 'Surge',
     description:
-      ' SaaS Website Builder. Built using Next.js 14, TypeScript, Stripe Connect, MySQL, Prisma and other technologies.',
+      'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
     tags: [
       'React',
       'TypeScript',
@@ -72,8 +108,7 @@ export const projectsData = [
   },
   {
     title: 'Portfolio',
-    description:
-      'FileDrive - Next.js app using Convex for decentralized storage, TypeScript for code quality, and Clerk for user management.',
+    description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
     tags: [
       'React',
       'TypeScript',
@@ -89,7 +124,7 @@ export const projectsData = [
   {
     title: 'AutoHub',
     description:
-      'AutoHub - Car catalog site built on TypeScript, Tailwind CSS, and Next.js, with efficient data fetching using Axios.',
+      'An online catalog for browsing and discovering cars with efficient data retrieval.',
     tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Axios', 'Headless'],
     imageUrl: carcatalogImg,
     link: 'https://github.com/bbyc4kes/car-catalog-NEXT.js',
@@ -97,7 +132,7 @@ export const projectsData = [
   {
     title: 'CampWithUs',
     description:
-      'Architected backend with Express.js, frontend features with HTML5/CSS, and facilitated smooth client-server communication via AJAX.',
+      'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
     tags: [
       'JavaScript',
       'Express.js',
@@ -112,7 +147,7 @@ export const projectsData = [
   {
     title: 'ProjectManagement',
     description:
-      'Project Management Project - React app demonstrating core functionalities using Tailwind CSS and custom CSS for styling.',
+      'An application for managing projects, showcasing core functionalities with a user-friendly interface.',
     tags: ['React', 'Tailwind', 'Framer'],
     imageUrl: projectmanagementImg,
     link: 'https://github.com/bbyc4kes/project-management-project',
@@ -135,6 +170,7 @@ export const skillsData = [
   ['MongoDB', '/svgs/mongodb-original.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
+  ['Docker', '/svgs/Docker.svg'],
   ['Clerk', '/svgs/clerk.svg'],
   ['Axios', '/svgs/axios.svg'],
   ['HTML', '/svgs/file-type-html.svg'],
