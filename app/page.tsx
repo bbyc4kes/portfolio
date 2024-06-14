@@ -6,20 +6,8 @@ import Experience from '@/components/sections/experience/experience.page'
 import Hero from '@/components/sections/hero/hero.page'
 import Projects from '@/components/sections/projects/projects.page'
 import Skills from '@/components/sections/skills/skills.page'
-import { useEffect } from 'react'
-import Lenis from 'lenis'
 
 export default function Home() {
-  useEffect(() => {
-    const lenis = new Lenis()
-
-    function raf(time: number) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-  }, [])
   return (
     <main className="flex min-h-screen flex-col items-center w-full p-0">
       <Hero />
