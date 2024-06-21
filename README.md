@@ -66,6 +66,7 @@ This project includes several components and utilities that you can use and modi
 ## Contributing
 
 Feel free to fork this repository and submit pull requests. Any contributions, whether it be improvements, bug fixes, or new features, are greatly appreciated!
+Please make sure to read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) and the [Contribution Guidelines](CONTRIBUTE.md) before contributing.
 
 ## License
 
