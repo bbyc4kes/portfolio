@@ -57,14 +57,14 @@ Follow these name convensions sending PRs:
 
 `<reservedkeyword>/<feature/bugfix/hotfix/test/wip>/custom-name-of-the-branch`
 
-for example:
+**for example:**
 
-azimov/feature/document-generation
-fanning/fix/user-authentication
-farrell/bugfix/fix-header-styling
-hotfix/security-patch
-fox/release/v2.0.1
-gilbert/docs/T-654-update-readme 
+- azimov/feature/document-generation
+- fanning/fix/user-authentication
+- farrell/bugfix/fix-header-styling
+- hotfix/security-patch
+- fox/release/v2.0.1
+- gilbert/docs/T-654-update-readme 
 
 **When you're ready to submit a pull request (PR), follow these steps:**
 
