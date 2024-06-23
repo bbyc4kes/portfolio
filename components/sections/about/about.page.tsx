@@ -11,7 +11,7 @@ import Link from 'next/link'
 import { smoothScrollTo } from '@/lib/utils'
 
 export default function About() {
-  const { ref } = useSectionInView('about', 0.3)
+  const { ref } = useSectionInView('about', 0.4)
   const divRef = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <motion.section
-      className="flex flex-col scroll-mt-26 justify-center items-center leading-8 h-[1200px] z-50 w-full dark:bg-darkBg dark:text-white"
+      className="flex flex-col scroll-mt-26 items-center leading-8 h-[1000px] lg:h-[1100px] z-50 w-full dark:bg-darkBg dark:text-white"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function About() {
               </span>
             </Link>
           </div>
-          <div className="absolute left-1/3 lg:left-0 lg:top-1/4 z-30">
+          <div className="absolute lg:left-0 lg:top-1/4 z-30">
             <div className="relative w-[470px] h-[470px]">
               <div className="group-hover:opacity-60 transition-opacity absolute inset-0 bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] rounded-full z-20"></div>
               <div className="absolute inset-0">

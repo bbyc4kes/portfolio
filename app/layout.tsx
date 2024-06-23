@@ -12,7 +12,7 @@ import { ModeToggle } from '@/theme/mode-toggler'
 export const metadata: Metadata = {
   title: 'Maksym Azimov | Portfolio',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov!',
+    'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
 }
 
 const fontMontserrat = FontMontserrat({
