@@ -14,14 +14,18 @@ export function ModeToggle() {
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
   }
+
+  if (!hasMounted) return null
+
+  console.log(theme)
+
   return (
     <Button
-      className="opacity-95 border-none"
-      variant="outline"
+      className="opacity-95 border-none dark:text-white text-black bg-transparent hover:bg-background"
       size="icon"
       onClick={toggleTheme}
     >
-      {hasMounted && theme === 'light' ? (
+      {theme === 'light' ? (
         <Sun className="h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
       ) : (
         <Moon className="h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
