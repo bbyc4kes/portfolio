@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <motion.section
-      className="flex flex-col scroll-mt-40 items-center justify-center lg:justify-start leading-8 h-[1000px] lg:h-[1100px] z-50 w-full dark:bg-darkBg dark:text-white"
+      className="flex flex-col sm:scroll-mt-40 items-center justify-center lg:justify-start leading-8 h-[1000px] lg:h-[1100px] z-50 w-full dark:bg-darkBg dark:text-white"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
