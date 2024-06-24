@@ -5,9 +5,10 @@ import { useSectionInView } from '@/lib/hooks'
 import { projectsData } from '@/lib/data'
 import Project from './project'
 import SectionHeading from '../../shared/section-heading'
+import SectionDivider from '@/components/shared/section-divider'
 
 export default function Projects() {
-  const { ref } = useSectionInView('projects', 0.15)
+  const { ref } = useSectionInView('projects', 0.25)
 
   return (
     <section
@@ -23,6 +24,7 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
+      <SectionDivider />
     </section>
   )
 }

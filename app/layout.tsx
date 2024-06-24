@@ -12,7 +12,7 @@ import { ModeToggle } from '@/theme/mode-toggler'
 export const metadata: Metadata = {
   title: 'Maksym Azimov | Portfolio',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov!',
+    'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
 }
 
 const fontMontserrat = FontMontserrat({
@@ -43,7 +43,7 @@ export default function RootLayout({
               <Header />
               {children}
               <Footer />
-              <div className="fixed sm:left-0 sm:bottom-0 sm:top-auto sm:right-auto top-0 right-0 sm:m-8 m-4 z-[99]">
+              <div className="fixed sm:left-0 sm:bottom-0 sm:top-auto sm:right-auto top-0 left-0 sm:m-4 my-5 mx-2 z-[99]">
                 <ModeToggle />
               </div>
               <Toaster position="top-right" />

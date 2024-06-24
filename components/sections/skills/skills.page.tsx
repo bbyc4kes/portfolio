@@ -6,6 +6,7 @@ import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import SectionHeading from '../../shared/section-heading'
 import Image from 'next/image'
+import SectionDivider from '@/components/shared/section-divider'
 
 const fadeInAnimationVariants = {
   initial: {
@@ -31,7 +32,7 @@ export default function Skills() {
       className="pb-[150px] text-center sm:pb-40 py-24 w-full dark:text-white dark:bg-darkBg flex flex-col items-center justify-center"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 my-26 mb-[150px] max-w-[53rem]">
+      <ul className="flex flex-wrap justify-center items-center gap-2 text-lg text-gray-800 my-26 mb-[150px] max-w-[53rem]">
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-gray-200 borderBlack flex justify-center items-center rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
@@ -46,7 +47,7 @@ export default function Skills() {
           >
             <Image
               src={skill[1]}
-              alt={''}
+              alt={skill[0]}
               width={24}
               height={24}
               className="w-6 h-6 mr-2 inline"
@@ -55,6 +56,9 @@ export default function Skills() {
           </motion.li>
         ))}
       </ul>
+      <div className="dark:bg-darkBg w-full flex justify-center">
+        <SectionDivider />
+      </div>
     </section>
   )
 }

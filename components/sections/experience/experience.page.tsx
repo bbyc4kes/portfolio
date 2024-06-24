@@ -10,6 +10,7 @@ import { useHasMounted, useSectionInView } from '@/lib/hooks'
 import SectionHeading from '@/components/shared/section-heading'
 import { useTheme } from 'next-themes'
 import { experiencesData } from '@/lib/data'
+import SectionDivider from '@/components/shared/section-divider'
 
 export default function Experience() {
   const { ref } = useSectionInView('experience')
@@ -23,7 +24,7 @@ export default function Experience() {
       className="scroll-mt-12 w-full dark:bg-darkBg dark:text-white"
     >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="" animate={false}>
+      <VerticalTimeline animate={false}>
         {ihasMounted &&
           experiencesData.map((item, index) => (
             <React.Fragment key={index}>
@@ -41,6 +42,7 @@ export default function Experience() {
                     theme === 'light'
                       ? '0.4rem solid #9ca3af'
                       : '0.4rem solid rgba(255, 255, 255, 0.5)',
+                  display: theme === 'dark' ? 'none' : 'block',
                 }}
                 date={item.date}
                 icon={item.icon}
@@ -48,6 +50,7 @@ export default function Experience() {
                   background:
                     theme === 'light' ? '#fff' : 'rgba(255, 255, 255, 0.15)',
                   fontSize: '1.5rem',
+                  display: theme === 'dark' ? 'none' : 'flex',
                 }}
               >
                 <h3 className="font-semibold capitalize">{item.title}</h3>
@@ -59,6 +62,9 @@ export default function Experience() {
             </React.Fragment>
           ))}
       </VerticalTimeline>
+      <div className="dark:bg-darkBg w-full flex justify-center">
+        <SectionDivider />
+      </div>
     </section>
   )
 }
