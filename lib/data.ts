@@ -7,6 +7,7 @@ import projectmanagementImg from '@/public/images/project-management.png'
 import reactfoodImg from '@/public/images/react-food.png'
 import surgeImg from '@/public/images/surge.png'
 import portfolioImg from '@/public/images/portfolio.png'
+import aiLawyerImg from '@/public/images/ai-lawyer.png'
 import {
   BookIcon,
   BriefcaseBusinessIcon,
@@ -49,18 +50,18 @@ export const experiencesData = [
     date: 'Jun 2024 - Present',
   },
   {
-    title: 'Self-education',
-    location: 'Czechia',
-    description: `Stying Web Development and Software Engineering, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
-    icon: React.createElement(LaptopMinimalIcon),
-    date: 'Nov 2023 - Present',
-  },
-  {
     title: 'NAU',
     location: 'Kyiv, Ukraine',
     description: `Bachelor's degree in Cybersecurity. Studying on the faculty of Cyber Security and Software Engineering.`,
     icon: React.createElement(BookIcon),
     date: 'Sep 2022 - Present',
+  },
+  {
+    title: 'Self-education',
+    location: 'Czechia',
+    description: `Styting Programming and Software Engineering, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
+    icon: React.createElement(LaptopMinimalIcon),
+    date: 'Jul 2022 - Present',
   },
 ] as const
 
@@ -90,6 +91,44 @@ export const projectsData = [
     link: 'https://github.com/bbyc4kes/file-drive',
   },
   {
+    title: 'Portfolio',
+    description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Framer Motion',
+      'Cloudinary',
+      'React Email',
+      'Tailwind',
+    ],
+    imageUrl: portfolioImg,
+    link: 'https://github.com/bbyc4kes/portfolio',
+  },
+  {
+    title: 'AI-Laywer',
+    description: `AI-Lawyer is a platform that helps people to get legal advice from the best lawyers in the world. It's a platform that connects people with lawyers.`,
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind',
+      'OpenAI',
+      'SCRUM Methodology',
+      'End-to-End Development',
+    ],
+    imageUrl: aiLawyerImg,
+    link: 'mailto:azimov.worksace@gmail.com',
+  },
+  {
+    title: 'AutoHub',
+    description:
+      'An online catalog for browsing and discovering cars with efficient data retrieval.',
+    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Axios', 'Headless'],
+    imageUrl: carcatalogImg,
+    link: 'https://github.com/bbyc4kes/car-catalog-NEXT.js',
+  },
+  {
     title: 'Surge',
     description:
       'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
@@ -107,29 +146,6 @@ export const projectsData = [
     link: 'https://github.com/bbyc4kes/surge',
   },
   {
-    title: 'Portfolio',
-    description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Framer Motion',
-      'Cloudinary',
-      'React Email',
-      'Tailwind',
-    ],
-    imageUrl: portfolioImg,
-    link: 'https://github.com/bbyc4kes/portfolio',
-  },
-  {
-    title: 'AutoHub',
-    description:
-      'An online catalog for browsing and discovering cars with efficient data retrieval.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Axios', 'Headless'],
-    imageUrl: carcatalogImg,
-    link: 'https://github.com/bbyc4kes/car-catalog-NEXT.js',
-  },
-  {
     title: 'CampWithUs',
     description:
       'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
@@ -143,14 +159,6 @@ export const projectsData = [
     ],
     imageUrl: campwithusImg,
     link: 'https://github.com/bbyc4kes/campwithus',
-  },
-  {
-    title: 'ProjectManagement',
-    description:
-      'An application for managing projects, showcasing core functionalities with a user-friendly interface.',
-    tags: ['React', 'Tailwind', 'Framer'],
-    imageUrl: projectmanagementImg,
-    link: 'https://github.com/bbyc4kes/project-management-project',
   },
 ] as const
 
