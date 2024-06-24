@@ -67,13 +67,13 @@ export default function Hero() {
         </a>
         <div className="absolute top-36 lg:top-48 flex flex-col items-start justify-center container tracking-wide text-black dark:text-white">
           <div className="relative w-full h-full container">
-            <div className="lg:text-[3rem] text-[2rem] font-extrabold lg:mb-5 text-start h-72 w-[350px] md:w-[700px] lg:w-[1000px]">
+            <div className="lg:text-[3rem] text-[2rem] font-extrabold lg:mb-5 text-start h-72 w-[280px] sm:w-[520px] md:w-[700px] lg:w-[1000px]">
               <span className="font-extrabold mb-10 text-start">Hey!👋</span>
               <br />
               <TextAnimation delay={1} baseText={`I'm Maksym`} />
             </div>
             <motion.div
-              className="flex flex-col md:flex-row w-92 items-center md:mt-12 justify-center gap-3 px-4 text-lg font-medium"
+              className="flex flex-col md:flex-row w-92 items-center md:mt-12 justify-center gap-3 px-4 lg:text-lg font-medium text-sm"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -81,7 +81,7 @@ export default function Hero() {
               }}
             >
               <a
-                className="group w-64 sm:w-auto bg-darkBg text-white hover:dark:text-black px-7 py-3 cursor-pointer flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-darkBeige active:scale-105 transition"
+                className="group w-64 sm:w-auto bg-darkBg text-white hover:dark:text-black px-7 py-3 cursor-pointer flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-darkBeige active:scale-105 transition justify-center"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: 'contact' })
                   setActiveSection('contact')

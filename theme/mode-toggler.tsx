@@ -17,18 +17,16 @@ export function ModeToggle() {
 
   if (!hasMounted) return null
 
-  console.log(theme)
-
   return (
     <Button
-      className="opacity-95 border-none dark:text-white text-black bg-transparent hover:bg-background"
+      className="opacity-80 border-none"
       size="icon"
       onClick={toggleTheme}
     >
       {theme === 'light' ? (
-        <Sun className="h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
+        <Sun className="h-4 w-4 scale-100 transition-all" />
       ) : (
-        <Moon className="h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
+        <Moon className="h-4 w-4 scale-100 transition-all" />
       )}
     </Button>
   )
