@@ -53,6 +53,15 @@ If you have a suggestion to improve the project, please open an issue with the f
 
 Follow these name convensions sending PRs:
 
+**BRANCHES**
+
+Main is the production branch where the latest version and the source for deployed app are.
+To add a desired feature to the project you should follow the next steps:
+
+**BEFORE WE START**
+
+Follow these branch-naming conventions:
+
 **Name of the branch:**
 
 `<reservedkeyword>/<feature/bugfix/hotfix/test/wip>/custom-name-of-the-branch`
@@ -66,24 +75,28 @@ Follow these name convensions sending PRs:
 - fox/release/v2.0.1
 - gilbert/docs/T-654-update-readme 
 
-**When you're ready to submit a pull request (PR), follow these steps:**
+**When you're ready to implement your changes, follow these steps:**
 
-1. **Create a branch**: 
+1. **Create a fork**
+- Create a fork from this repository selecting (Maksym Azimov)[https://github.com/bbyc4kes] as the owner and then open your forked repo in your profile 
+- Clone repo in your local workspace and start implementing features/fixing bugs/writinf documentation etc.
+
+2. **Create a branch**: 
     ```sh
-    git checkout -b feature/your-feature-name
+    git checkout -b azimov/feature/your-feature-name
     ```
-2. **Make your changes**: Implement your changes in the new branch.
-3. **Commit your changes**: 
+3. **Make your changes**: Implement your changes in the new branch.
+4. **Commit your changes**: 
     ```sh
     git commit -m 'feature: Add some feature'
     ```
-4. **Push to the branch**: 
+5. **Push to the branch**: 
     ```sh
-    git push origin feature/your-feature-name
+    git push origin azimov/feature/your-feature-name
     ```
-5. **Open a pull request**: Go to the repository and click on "Compare & pull request".
+6. **Open a pull request**: Go to the repository and click on "Compare & pull request".
 
-Your pull request will be reviewed, and feedback may be provided to ensure the changes align with the project’s goals and guidelines.
+After the submission of your PR, if it's follows our convensions an Owner/Authorized admins will have a look at your PR and accept/reject with given feedback. You can expect to get a valuable feedback and more activity on your profile from an owner of this project [Maksym Azimov](https://github.com/bbyc4kes) and/or admins reviewing your PR :)
 
 ## Code of Conduct
 
