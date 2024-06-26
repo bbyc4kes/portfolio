@@ -31,6 +31,9 @@ To get started with contributing, follow these steps:
     ```
 5. **Open your browser**: Visit `http://localhost:3000` to see the running application.
 
+P.S. if you wanna get videos uploaded and integrated in the project, you should configure your cloudinary connection with the project and populate `.env.example`. 
+     Another thing to mention that this project uses react-email for email sending functionality,so you might wanna cofigure your `RESEND_API_KEY` if you are planning to work with it as well.
+
 ## How to Contribute
 
 ### Reporting Bugs
