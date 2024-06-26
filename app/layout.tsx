@@ -43,7 +43,7 @@ export default function RootLayout({
               <Header />
               {children}
               <Footer />
-              <div className="fixed sm:left-0 sm:bottom-0 sm:top-auto sm:right-auto top-0 left-0 sm:m-4 my-5 mx-2 z-[99]">
+              <div className="fixed sm:left-0 sm:bottom-0 sm:top-auto sm:right-auto top-0 left-0 sm:m-4 my-5 mx-4 z-[99]">
                 <ModeToggle />
               </div>
               <Toaster position="top-right" />
