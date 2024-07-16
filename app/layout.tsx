@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { Montserrat as FontMontserrat } from 'next/font/google'
 import { cn } from '@/lib/utils'
-import ActiveSectionContextProvider from '@/store/active-section-context'
 import './globals.css'
 import { ThemeProvider } from '@/theme/theme-provider'
 import Header from '@/components/shared/header'
 import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/shared/footer'
 import { ModeToggle } from '@/theme/mode-toggler'
+import ActiveSectionContextProvider from '@/stores/active-section/active-section-context'
 
 export const metadata: Metadata = {
   title: 'Maksym Azimov | Portfolio',
@@ -43,7 +43,7 @@ export default function RootLayout({
               <Header />
               {children}
               <Footer />
-              <div className="fixed sm:left-0 sm:bottom-0 sm:top-auto sm:right-auto top-0 left-0 sm:m-4 my-5 mx-4 z-[99]">
+              <div className="fixed top-2 left-2 sm:left-6 sm:bottom-6 sm:top-auto right-auto z-[99]">
                 <ModeToggle />
               </div>
               <Toaster position="top-right" />
