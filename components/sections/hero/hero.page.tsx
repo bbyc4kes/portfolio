@@ -8,7 +8,7 @@ import TextAnimation from './text-animation'
 import { smoothScrollTo } from '@/lib/utils'
 import { CircleUser, Download, Linkedin } from 'lucide-react'
 import Image from 'next/image'
-import { useActiveSectionContext } from '@/store/active-section-context'
+import { useActiveSectionContext } from '@/stores/active-section/active-section-context'
 
 export default function Hero() {
   const { ref } = useSectionInView('home')
@@ -39,15 +39,15 @@ export default function Hero() {
           <source src="/layout.mp4" />
         </video>
         <a
-          className="flex justify-center items-center absolute right-10 bottom-10 sm:right-16 sm:bottom-16 lg:right-24 lg:bottom-24 cursor-pointer z-[49]"
+          className="flex justify-center items-center absolute right-6 bottom-6 sm:right-8 sm:bottom-8 cursor-pointer z-[49]"
           onClick={(e) => {
             smoothScrollTo({ e, id: 'about' })
           }}
         >
           <motion.span
-            className="w-2 h-10 bg-black  dark:bg-[#ddbea9] rounded-lg m-2"
+            className="w-[5px] h-8 md:w-2 md:h-10 bg-black  dark:bg-[#ddbea9] rounded-lg m-2"
             initial={{ y: 0, rotate: -45 }}
-            animate={{ y: [0, 25, 0], rotate: [-45, -45, -45] }}
+            animate={{ y: [0, 15, 0], rotate: [-45, -45, -45] }}
             transition={{
               duration: 1.1,
               ease: 'easeInOut',
@@ -55,9 +55,9 @@ export default function Hero() {
             }}
           />
           <motion.span
-            className="w-2 h-10 bg-black dark:bg-[#ddbea9] rounded-lg m-2"
+            className="w-[5px] h-8 md:w-2 md:h-10 bg-black dark:bg-[#ddbea9] rounded-lg m-2"
             initial={{ y: 0, rotate: 45 }}
-            animate={{ y: [0, 25, 0], rotate: [45, 45, 45] }}
+            animate={{ y: [0, 15, 0], rotate: [45, 45, 45] }}
             transition={{
               duration: 1.1,
               ease: 'easeInOut',

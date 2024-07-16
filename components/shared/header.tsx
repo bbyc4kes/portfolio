@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { links } from '@/lib/data'
 import Link from 'next/link'
 import { smoothScrollTo } from '@/lib/utils'
-import { useActiveSectionContext } from '@/store/active-section-context'
+import { useActiveSectionContext } from '@/stores/active-section/active-section-context'
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
