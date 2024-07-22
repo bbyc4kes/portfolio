@@ -34,7 +34,7 @@ export default function Hero() {
           crossOrigin="anonymous"
           muted
           loop
-          className="-z-10 object-cover h-screen w-screen"
+          className="absolute -z-10 object-cover h-screen w-screen"
         >
           <source src="/layout.mp4" />
         </video>
@@ -65,10 +65,16 @@ export default function Hero() {
             }}
           />
         </a>
-        <div className="absolute top-36 lg:top-48 flex flex-col items-start justify-center container tracking-wide text-black dark:text-white">
-          <div className="relative w-full h-full container">
-            <div className="lg:text-[3rem] text-[2rem] font-extrabold lg:mb-5 text-start h-72 w-[280px] sm:w-[520px] md:w-[700px] lg:w-[920px]">
-              <span className="font-extrabold mb-10 text-start">Hey!👋</span>
+        <div className="flex flex-col items-start justify-center container tracking-wide text-black dark:text-white">
+          <div className="relative w-full h-full container flex flex-col items-center">
+            <div className="lg:text-[3rem] text-[2rem] font-extrabold lg:mb-5 text-center h-72 w-[280px] sm:w-[520px] md:w-[700px] lg:w-[920px]">
+              <motion.span
+                initial={{ y: -100, x: '-50%', opacity: 0 }}
+                animate={{ y: 0, x: '-50%', opacity: 1 }}
+                className="font-extrabold mb-10 text-start"
+              >
+                Hey!👋
+              </motion.span>
               <br />
               <TextAnimation delay={1} baseText={`I'm Maksym`} />
             </div>
