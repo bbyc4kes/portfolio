@@ -59,7 +59,7 @@ export const experiencesData = [
   {
     title: 'Self-education',
     location: 'Czechia',
-    description: `Styting Programming and Software Engineering, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
+    description: `Styding Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
     icon: React.createElement(LaptopMinimalIcon),
     date: 'Jul 2022 - Present',
   },
