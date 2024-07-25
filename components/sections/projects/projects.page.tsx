@@ -4,7 +4,7 @@ import React from 'react'
 import { useSectionInView } from '@/lib/hooks'
 import { projectsData } from '@/lib/data'
 import Project from './project'
-import SectionHeading from '../../shared/section-heading'
+import SectionHeading from '@/components/shared/section-heading'
 import SectionDivider from '@/components/shared/section-divider'
 
 export default function Projects() {

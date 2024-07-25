@@ -2,11 +2,11 @@
 
 import { useSectionInView } from '@/lib/hooks'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import portfolioImg from '../../../public/images/photo.jpg'
+import portfolioImg from '@/public/images/photo.jpg'
 import Image from 'next/image'
-import SectionDivider from '../../shared/section-divider'
+import SectionDivider from '@/components/shared/section-divider'
 import { useRef } from 'react'
-import SectionHeading from '../../shared/section-heading'
+import SectionHeading from '@/components/shared/section-heading'
 import Link from 'next/link'
 import { smoothScrollTo } from '@/lib/utils'
 
