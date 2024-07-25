@@ -73,7 +73,7 @@ export default function Hero() {
                 animate={{ y: 0, x: '-50%', opacity: 1 }}
                 className="font-extrabold mb-10 text-start"
               >
-                Hey!👋
+                Hey!
               </motion.span>
               <br />
               <TextAnimation delay={1} baseText={`I'm Maksym`} />
@@ -87,37 +87,34 @@ export default function Hero() {
               }}
             >
               <a
-                className="group w-64 sm:w-auto bg-darkBg text-white hover:dark:text-black px-7 py-3 cursor-pointer flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-darkBeige active:scale-105 transition justify-center"
+                className="group w-64 sm:w-auto bg-darkBg text-white hover:dark:text-black px-7 py-3 cursor-pointer flex items-center gap-2 rounded-full outline-none hover:bg-lightBeige/50 hover:text-black transition justify-center"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: 'contact' })
                   setActiveSection('contact')
                   setTimeOfLastClick(Date.now())
                 }}
               >
-                Contact me here{' '}
-                <CircleUser className="opacity-70 group-hover:opacity-80" />
+                <span>Contact me here</span>
               </a>
 
               <a
-                className="group w-64 sm:w-auto bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 justify-center"
+                className="group w-64 sm:w-auto bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none transition cursor-pointer borderBlack dark:bg-white/10 justify-center text-black dark:text-white dark:hover:bg-white/20 hover:bg-white/50"
                 href="/CV_Azimov_Maksym.pdf"
                 download
               >
-                Download CV{' '}
-                <Download className="opacity-60 group-hover:opacity-100" />
+                <span>Download CV</span>
               </a>
 
-              <div className="flex gap-2 ">
+              <div className="flex gap-2">
                 <a
-                  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center justify-center gap-2 rounded-full w-[60px] h-[60px] focus:scale-105 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                  className="bg-white p-4 text-black hover:text-gray-950 flex items-center justify-center gap-2 rounded-full w-[60px] h-[60px] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20 hover:bg-white/50"
                   href="https://www.linkedin.com/in/maksym-azimov/"
                   target="_blank"
                 >
                   <Linkedin />
                 </a>
-
                 <a
-                  className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-105 hover:scale-105 hover:text-gray-950 w-[60px] h-[60px] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 justify-center"
+                  className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:text-gray-950 w-[60px] h-[60px] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 justify-center dark:hover:bg-white/20 hover:bg-white/50"
                   href="https://github.com/bbyc4kes"
                   target="_blank"
                 >
