@@ -15,7 +15,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="text-center dark:text-white dark:bg-darkBg w-full items-center flex flex-col py-20"
+      className="text-center dark:text-white dark:bg-darkBg w-full items-center flex flex-col py-20 pb-44 scroll-mt-12"
       initial={{
         opacity: 0.8,
       }}
@@ -30,7 +30,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Hit me up!</SectionHeading>
-      <div className="w-[min(100%,38rem)]">
+      <div className="w-[min(100%,38rem)] px-4">
         <p className="text-gray-700 mt-6 mb-20 dark:text-white/80">
           Please contact me directly at{' '}
           <a className="underline" href="mailto:azimov.workspace@gmail.com">
