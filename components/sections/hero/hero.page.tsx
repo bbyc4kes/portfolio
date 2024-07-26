@@ -34,7 +34,7 @@ export default function Hero() {
           crossOrigin="anonymous"
           muted
           loop
-          className="absolute -z-10 object-cover h-screen w-screen"
+          className="-z-10 object-cover h-screen w-screen"
         >
           <source src="/layout.mp4" />
         </video>

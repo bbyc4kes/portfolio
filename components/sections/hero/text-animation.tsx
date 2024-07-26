@@ -35,11 +35,7 @@ export default function TextAnimation({
   }, [])
 
   return (
-    <motion.span
-      initial={{ y: -100, x: '-50%', opacity: 0 }}
-      animate={{ y: 0, x: '-50%', opacity: 1 }}
-      className="text-[2rem] lg:text-[3rem] h-32 max-w-92 font-extrabold mb-10 text-start"
-    >
+    <span className="text-[2rem] lg:text-[3rem] h-32 max-w-92 font-extrabold mb-10 text-start">
       <motion.span>{displayText}</motion.span>
       {done && (
         <>
@@ -48,6 +44,6 @@ export default function TextAnimation({
       )}
       <RedoAnimText delay={delay + 1} />
       <CursorBlinker />
-    </motion.span>
+    </span>
   )
 }
