@@ -34,7 +34,7 @@ export default function Hero() {
           crossOrigin="anonymous"
           muted
           loop
-          className="-z-10 object-cover h-screen w-screen"
+          className="absolute -z-10 object-cover h-screen w-screen"
         >
           <source src="/layout.mp4" />
         </video>
@@ -107,14 +107,14 @@ export default function Hero() {
 
               <div className="flex gap-2">
                 <a
-                  className="bg-white p-4 text-black hover:text-gray-950 flex items-center justify-center gap-2 rounded-full w-[60px] h-[60px] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20 hover:bg-white/50"
+                  className="bg-white p-2 text-black hover:text-gray-950 flex items-center justify-center gap-2 rounded-full w-[50px] h-[50px] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20 hover:bg-white/50"
                   href="https://www.linkedin.com/in/maksym-azimov/"
                   target="_blank"
                 >
                   <Linkedin />
                 </a>
                 <a
-                  className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full hover:text-gray-950 w-[60px] h-[60px] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 justify-center dark:hover:bg-white/20 hover:bg-white/50"
+                  className="bg-white p-2 text-gray-700 flex items-center gap-2 rounded-full hover:text-gray-950 w-[50px] h-[50px] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 justify-center dark:hover:bg-white/20 hover:bg-white/50"
                   href="https://github.com/bbyc4kes"
                   target="_blank"
                 >
