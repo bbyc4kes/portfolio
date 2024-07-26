@@ -2,7 +2,7 @@
 
 import { links } from '@/lib/data'
 import { smoothScrollTo } from '@/lib/utils'
-import { useActiveSectionContext } from '@/stores/active-section/active-section-context'
+import { useActiveSectionContext } from '@/stores/active-section'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 

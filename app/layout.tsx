@@ -7,7 +7,7 @@ import Header from '@/components/shared/header'
 import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/shared/footer'
 import { ModeToggle } from '@/theme/mode-toggler'
-import ActiveSectionContextProvider from '@/stores/active-section/active-section-context'
+import ActiveSectionContextProvider from '@/stores/active-section'
 
 export const metadata: Metadata = {
   title: 'Maksym Azimov | Portfolio',
