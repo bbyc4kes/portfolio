@@ -30,19 +30,19 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="w-full pt-56">
+      <div className="flex flex-col items-center w-full pt-56">
         <SectionHeading>About Me</SectionHeading>
         <motion.div
-          className="w-full lg:w-[980px] xl:w-[1150px] lg:h-[700px] overflow-hidden py-12 px-4"
+          className="w-full sm:w-[60%] sm:text-center lg:w-[1040px] xl:w-[1180px] lg:h-[700px] overflow-hidden py-12 px-4"
           ref={divRef}
           style={{
             scale: scaleProgess,
             opacity: opacityProgess,
           }}
         >
-          <div className="relative group w-full flex justify-center">
-            <div className="flex flex-col gap-3 relative lg:text-start lg:block lg:absolute lg:right-0 lg:top-[27%] xl:top-1/3 max-w-96 lg:max-w-[580px] xl:max-w-[650px] text-md lg:text-lg z-40 font-semibold tracking-wide text-primary h-full">
-              <div className="flex flex-col gap-6">
+          <div className="relative group w-full ">
+            <div className="flex flex-col gap-3 relative lg:text-start lg:block lg:absolute lg:right-0 lg:top-[27%] xl:top-1/3 lg:max-w-[580px] xl:max-w-[650px] text-md lg:text-lg z-40 font-semibold tracking-wide text-primary xl:h-[442px]">
+              <div className="flex flex-col gap-6 justify-center h-full">
                 <span>
                   I&apos;m Full-stack developer with expertise in TypeScript,
                   React, Next.js, Node.js, and database technologies
@@ -56,7 +56,7 @@ export default function About() {
                   my skills to create meaningful connections between products
                   and users.
                 </span>
-                <p className="flex flex-col items-start">
+                <p className="flex flex-col items-start sm:items-center lg:items-start">
                   <span>So if you are interested,</span>
                   <Link
                     href={'contact'}
