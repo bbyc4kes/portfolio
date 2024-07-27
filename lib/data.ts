@@ -106,8 +106,8 @@ export const projectsData = [
     link: 'https://github.com/bbyc4kes/portfolio',
   },
   {
-    title: 'AI-Laywer',
-    description: `AI-Lawyer is a platform that helps people to get legal advice from the best lawyers in the world. It's a platform that connects people with lawyers.`,
+    title: 'Isida',
+    description: `Isida is a platform that helps people to get legal advice from the best lawyers in the world. It's a platform that connects people with lawyers.`,
     tags: [
       'React',
       'TypeScript',
@@ -119,14 +119,6 @@ export const projectsData = [
     ],
     imageUrl: aiLawyerImg,
     link: 'mailto:azimov.worksace@gmail.com',
-  },
-  {
-    title: 'AutoHub',
-    description:
-      'An online catalog for browsing and discovering cars with efficient data retrieval.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Axios', 'Headless'],
-    imageUrl: carcatalogImg,
-    link: 'https://github.com/bbyc4kes/car-catalog-NEXT.js',
   },
   {
     title: 'Surge',
