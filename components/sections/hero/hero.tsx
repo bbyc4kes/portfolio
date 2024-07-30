@@ -6,7 +6,7 @@ import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import TextAnimation from './text-animation'
 import { smoothScrollTo } from '@/lib/utils'
-import { CircleUser, Download, Linkedin } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import { useActiveSectionContext } from '@/stores/active-section'
 
@@ -38,33 +38,6 @@ export default function Hero() {
         >
           <source src="/layout.mp4" />
         </video>
-        <a
-          className="flex justify-center items-center absolute right-6 bottom-6 sm:right-8 sm:bottom-8 cursor-pointer z-[49]"
-          onClick={(e) => {
-            smoothScrollTo({ e, id: 'about' })
-          }}
-        >
-          <motion.span
-            className="w-[5px] h-8 md:w-2 md:h-10 bg-black  dark:bg-[#ddbea9] rounded-lg m-2"
-            initial={{ y: 0, rotate: -45 }}
-            animate={{ y: [0, 15, 0], rotate: [-45, -45, -45] }}
-            transition={{
-              duration: 1.1,
-              ease: 'easeInOut',
-              repeat: Infinity,
-            }}
-          />
-          <motion.span
-            className="w-[5px] h-8 md:w-2 md:h-10 bg-black dark:bg-[#ddbea9] rounded-lg m-2"
-            initial={{ y: 0, rotate: 45 }}
-            animate={{ y: [0, 15, 0], rotate: [45, 45, 45] }}
-            transition={{
-              duration: 1.1,
-              ease: 'easeInOut',
-              repeat: Infinity,
-            }}
-          />
-        </a>
         <div className="flex flex-col items-start justify-center container tracking-wide text-black dark:text-white">
           <div className="relative w-full h-full container flex flex-col items-center">
             <div className="lg:text-[3rem] text-[2rem] font-extrabold lg:mb-5 text-center h-72 w-[280px] sm:w-[520px] md:w-[700px] lg:w-[920px]">
