@@ -11,15 +11,16 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0)
 
   const texts = [
-    'I am writing to you because I want a job.',
-    'I am the best candidate for this job.',
-    'In my grand adventure as a seasoned developer...',
-    "Knock knock! Who's there? Your new employee!",
-    'Walking the tightrope balance of project management...',
-    'I find myself compelled to express my interest due to...',
-    'My pen (or should I say, keyboard) is at work today because...',
-    'Inspired by the alluring challenge in the job posting, I am writing...',
-    'Stirred to my keyboard by the tantalizing nature of the role…',
+    'I’m a coding ninja, ready to tackle any challenge!',
+    'Pixels and code are my playground, let’s create magic!',
+    'Simplicity is the ultimate sophistication in design.',
+    'Debugging is like a treasure hunt, but with bugs!',
+    'Responsive design is my superpower, no matter the screen size.',
+    'Algorithms are the poetry of programming.',
+    'Teamwork makes the dream work, let’s build something amazing together!',
+    'Refactoring code is like decluttering your digital space.',
+    'Continuous learning keeps me sharp and ready for the future.',
+    'Elegant code is the hallmark of a skilled developer.',
   ]
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || '')
@@ -56,7 +57,7 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   }, [])
 
   return (
-    <motion.span className="lg:text-[1.7rem] md:text-[1.5rem] text-[1.2rem] h-32 max-w-92 font-bold bg-lightBeige dark:bg-darkBeige">
+    <motion.span className="lg:text-[1.7rem] md:text-[1.5rem] text-[1.2rem] h-32 max-w-96 font-bold bg-lightBeige dark:bg-darkBeige">
       {displayText}
     </motion.span>
   )
