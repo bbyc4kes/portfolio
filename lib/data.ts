@@ -45,7 +45,7 @@ export const experiencesData = [
   {
     title: 'WhirrCrew',
     location: 'Prague, Czechia',
-    description: `Front-end Web Develpoer position. Working on various projects with AI integration.`,
+    description: `Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration. `,
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Jun 2024 - Present',
   },
@@ -57,9 +57,9 @@ export const experiencesData = [
     date: 'Sep 2022 - Present',
   },
   {
-    title: 'Self-education',
+    title: 'Self-studying',
     location: 'Czechia',
-    description: `Styding Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
+    description: `Digging into Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
     icon: React.createElement(LaptopMinimalIcon),
     date: 'Jul 2022 - Present',
   },
