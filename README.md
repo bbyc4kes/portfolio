@@ -75,6 +75,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you want to get in touch, you can reach me at [Maksym Azimov](mailto:azimov.workspace@example.com).
+If you want to get in touch, you can reach me at [Maksym Azimov](mailto:azimov.workspace@gmail.com).
 
 Thank you for checking out my portfolio project!
