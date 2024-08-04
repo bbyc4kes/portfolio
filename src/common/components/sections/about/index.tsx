@@ -30,7 +30,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <div className="flex flex-col items-center w-full pt-56">
+      <div className="flex flex-col items-center w-full pt-8">
         <SectionHeading>About Me</SectionHeading>
         <motion.div
           className="w-full sm:w-[60%] sm:text-center lg:w-[1040px] xl:w-[1180px] lg:h-[700px] overflow-hidden py-12 px-4"
