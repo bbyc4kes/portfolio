@@ -23,7 +23,7 @@ export default function Hero() {
       >
         <div
           className={
-            'absolute top-0 left-0 h-screen w-screen dark:bg-[#0000007c]'
+            'absolute top-0 left-0 h-screen w-full dark:bg-[#0000007c]'
           }
         ></div>
         <video
