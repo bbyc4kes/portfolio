@@ -20,7 +20,9 @@ const baseUrl = process.env.VERCEL_URL
 export const StripeWelcomeEmail = () => (
   <Html>
     <Head />
-    <Preview>You&apos;re now ready to make live transactions with Stripe!</Preview>
+    <Preview>
+      You&apos;re now ready to make live transactions with Stripe!
+    </Preview>
     <Body style={main}>
       <Container style={container}>
         <Section style={box}>
@@ -32,8 +34,8 @@ export const StripeWelcomeEmail = () => (
           />
           <Hr style={hr} />
           <Text style={paragraph}>
-            Thanks for submitting your account information. You&apos;re now ready to
-            make live transactions with Stripe!
+            Thanks for submitting your account information. You&apos;re now
+            ready to make live transactions with Stripe!
           </Text>
           <Text style={paragraph}>
             You can view your payments and a variety of other information about
@@ -51,8 +53,8 @@ export const StripeWelcomeEmail = () => (
             handy.
           </Text>
           <Text style={paragraph}>
-            Once you&apos;re ready to start accepting payments, you&apos;ll just need to
-            use your live{" "}
+            Once you&apos;re ready to start accepting payments, you&apos;ll just
+            need to use your live{" "}
             <Link
               style={anchor}
               href="https://dashboard.stripe.com/login?redirect=%2Fapikeys"
@@ -78,8 +80,8 @@ export const StripeWelcomeEmail = () => (
             to ensure your website conforms to card network standards.
           </Text>
           <Text style={paragraph}>
-            We&apos;ll be here to help you with any step along the way. You can find
-            answers to most questions and get in touch with us on our{" "}
+            We&apos;ll be here to help you with any step along the way. You can
+            find answers to most questions and get in touch with us on our{" "}
             <Link style={anchor} href="https://support.stripe.com/">
               support site
             </Link>
