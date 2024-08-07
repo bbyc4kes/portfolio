@@ -60,7 +60,7 @@ export default function Hero() {
               }}
             >
               <a
-                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige/50 hover:text-black hover:dark:text-black sm:w-auto"
+                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
                 onClick={(e) => {
                   smoothScrollTo({ e, id: "contact" });
                   setActiveSection("contact");
@@ -71,7 +71,7 @@ export default function Hero() {
               </a>
 
               <a
-                className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-white/50 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
+                className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
                 href="/CV_Azimov_Maksym.pdf"
                 download
               >
@@ -80,14 +80,14 @@ export default function Hero() {
 
               <div className="flex gap-2">
                 <a
-                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-white/50 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
+                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://www.linkedin.com/in/maksym-azimov/"
                   target="_blank"
                 >
                   <Linkedin />
                 </a>
                 <a
-                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-white/50 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
+                  className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://github.com/bbyc4kes"
                   target="_blank"
                 >
