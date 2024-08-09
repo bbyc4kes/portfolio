@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-import campwithusImg from '@/../public/images/camp-with-us.png'
-import carcatalogImg from '@/../public/images/car-catalog.png'
-import filedriveImg from '@/../public/images/file-drive.png'
-import projectmanagementImg from '@/../public/images/project-management.png'
-import reactfoodImg from '@/../public/images/react-food.png'
-import surgeImg from '@/../public/images/surge.png'
-import portfolioImg from '@/../public/images/portfolio.png'
-import aiLawyerImg from '@/../public/images/ai-lawyer.png'
+import campwithusImg from '@/../public/images/camp-with-us.png';
+import carcatalogImg from '@/../public/images/car-catalog.png';
+import filedriveImg from '@/../public/images/file-drive.png';
+import projectmanagementImg from '@/../public/images/project-management.png';
+import reactfoodImg from '@/../public/images/react-food.png';
+import surgeImg from '@/../public/images/surge.png';
+import portfolioImg from '@/../public/images/portfolio.png';
+import aiLawyerImg from '@/../public/images/ai-lawyer.png';
 import {
   BookIcon,
   BriefcaseBusinessIcon,
   LaptopMinimalIcon,
-} from 'lucide-react'
+} from 'lucide-react';
 
 export const links = [
   {
@@ -39,7 +39,7 @@ export const links = [
     name: 'Contact',
     id: 'contact',
   },
-] as const
+] as const;
 
 export const experiencesData = [
   {
@@ -63,7 +63,7 @@ export const experiencesData = [
     icon: React.createElement(LaptopMinimalIcon),
     date: 'Jul 2022 - Present',
   },
-] as const
+] as const;
 
 export const images = {
   campwithusImg,
@@ -71,7 +71,7 @@ export const images = {
   filedriveImg,
   projectmanagementImg,
   reactfoodImg,
-}
+};
 
 export const projectsData = [
   {
@@ -141,18 +141,11 @@ export const projectsData = [
     title: 'CampWithUs',
     description:
       'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: [
-      'JavaScript',
-      'Express.js',
-      'MongoDB',
-      'Cloudinary',
-      'EJS',
-      'Prisma',
-    ],
+    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
     imageUrl: campwithusImg,
     link: 'https://github.com/bbyc4kes/campwithus',
   },
-] as const
+] as const;
 
 export const skillsData = [
   ['JavaScript', '/svgs/javascript-js.svg'],
@@ -180,4 +173,4 @@ export const skillsData = [
   ['Git', '/svgs/git.svg'],
   ['GitHub', '/svgs/github.svg'],
   ['', '/svgs/etc.svg'],
-] as const
+] as const;
