@@ -4,7 +4,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"  # Root directory where package.json is located
     schedule:
-      interval: "weekly"  # Checks for updates once a week
+      interval: "monthly"  # Checks for updates once a week
     commit-message:
       prefix: "deps"  # Optional: customize commit message prefix
     open-pull-requests-limit: 10  # Optional: limit the number of open PRs
