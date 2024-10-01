@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-import campwithusImg from '@/../public/images/camp-with-us.png'
-import carcatalogImg from '@/../public/images/car-catalog.png'
-import filedriveImg from '@/../public/images/file-drive.png'
-import projectmanagementImg from '@/../public/images/project-management.png'
-import reactfoodImg from '@/../public/images/react-food.png'
-import surgeImg from '@/../public/images/surge.png'
-import portfolioImg from '@/../public/images/portfolio.png'
-import aiLawyerImg from '@/../public/images/ai-lawyer.png'
+import campwithusImg from '@/../public/images/camp-with-us.png';
+import carcatalogImg from '@/../public/images/car-catalog.png';
+import filedriveImg from '@/../public/images/file-drive.png';
+import projectmanagementImg from '@/../public/images/project-management.png';
+import reactfoodImg from '@/../public/images/react-food.png';
+import surgeImg from '@/../public/images/surge.png';
+import portfolioImg from '@/../public/images/portfolio.png';
+import auditMasterImg from '@/../public/images/audit-master.png';
 import {
   BookIcon,
   BriefcaseBusinessIcon,
   LaptopMinimalIcon,
-} from 'lucide-react'
+} from 'lucide-react';
 
 export const links = [
   {
@@ -39,7 +39,7 @@ export const links = [
     name: 'Contact',
     id: 'contact',
   },
-] as const
+] as const;
 
 export const experiencesData = [
   {
@@ -63,7 +63,7 @@ export const experiencesData = [
     icon: React.createElement(LaptopMinimalIcon),
     date: 'Jul 2022 - Present',
   },
-] as const
+] as const;
 
 export const images = {
   campwithusImg,
@@ -71,7 +71,7 @@ export const images = {
   filedriveImg,
   projectmanagementImg,
   reactfoodImg,
-}
+};
 
 export const projectsData = [
   {
@@ -106,8 +106,8 @@ export const projectsData = [
     link: 'https://github.com/bbyc4kes/portfolio',
   },
   {
-    title: 'Isida',
-    description: `Isida is a platform that helps people to get legal advice from the best lawyers in the world. It's a platform that connects people with lawyers.`,
+    title: 'Audit Master',
+    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
     tags: [
       'React',
       'TypeScript',
@@ -117,8 +117,8 @@ export const projectsData = [
       'SCRUM Methodology',
       'End-to-End Development',
     ],
-    imageUrl: aiLawyerImg,
-    link: 'mailto:azimov.worksace@gmail.com',
+    imageUrl: auditMasterImg,
+    link: 'https://auditmaster.ai/',
   },
   {
     title: 'Surge',
@@ -152,7 +152,7 @@ export const projectsData = [
     imageUrl: campwithusImg,
     link: 'https://github.com/bbyc4kes/campwithus',
   },
-] as const
+] as const;
 
 export const skillsData = [
   ['JavaScript', '/svgs/javascript-js.svg'],
@@ -170,6 +170,8 @@ export const skillsData = [
   ['MongoDB', '/svgs/mongodb-original.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
   ['MySQL', '/svgs/MySQL.svg'],
+  ['Tanstack Query', '/svgs/react-query-seeklogo.svg'],
+  ['Tanstack Table', '/svgs/db-table-svgrepo-com.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
   ['Docker', '/svgs/Docker.svg'],
   ['Clerk', '/svgs/clerk.svg'],
@@ -180,4 +182,4 @@ export const skillsData = [
   ['Git', '/svgs/git.svg'],
   ['GitHub', '/svgs/github.svg'],
   ['', '/svgs/etc.svg'],
-] as const
+] as const;
