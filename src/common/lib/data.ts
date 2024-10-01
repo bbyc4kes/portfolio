@@ -141,14 +141,7 @@ export const projectsData = [
     title: 'CampWithUs',
     description:
       'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: [
-      'JavaScript',
-      'Express.js',
-      'MongoDB',
-      'Cloudinary',
-      'EJS',
-      'Prisma',
-    ],
+    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
     imageUrl: campwithusImg,
     link: 'https://github.com/bbyc4kes/campwithus',
   },

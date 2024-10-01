@@ -1,0 +1,10 @@
+version: 2
+updates:
+  # This will check for updates to npm dependencies specified in package.json and package-lock.json
+  - package-ecosystem: "npm"
+    directory: "/"  # Root directory where package.json is located
+    schedule:
+      interval: "monthly"  # Checks for updates
+    commit-message:
+      prefix: "deps"  # Optional: customize commit message prefix
+    open-pull-requests-limit: 5  # Optional: limit the number of open PRs
