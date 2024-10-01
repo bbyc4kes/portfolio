@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useRef } from "react";
-import { projectsData } from "@/common/lib/data";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
+import { useRef } from 'react';
+import { projectsData } from '@/common/lib/data';
+import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import Link from 'next/link';
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -18,7 +18,7 @@ export default function Project({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ['0 1', '1.33 1'],
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
@@ -35,7 +35,7 @@ export default function Project({
       <Link href={link} target="_blank">
         <section
           className={
-            "relative max-w-[52rem] overflow-hidden rounded-lg border transition hover:bg-gray-200 dark:hover:bg-darkOcean sm:h-[20rem]"
+            'relative max-w-[52rem] overflow-hidden rounded-lg border transition hover:bg-gray-200 dark:hover:bg-primary-foreground sm:h-[20rem]'
           }
         >
           <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">

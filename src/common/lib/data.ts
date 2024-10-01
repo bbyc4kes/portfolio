@@ -7,7 +7,7 @@ import projectmanagementImg from '@/../public/images/project-management.png';
 import reactfoodImg from '@/../public/images/react-food.png';
 import surgeImg from '@/../public/images/surge.png';
 import portfolioImg from '@/../public/images/portfolio.png';
-import aiLawyerImg from '@/../public/images/ai-lawyer.png';
+import auditMasterImg from '@/../public/images/audit-master.png';
 import {
   BookIcon,
   BriefcaseBusinessIcon,
@@ -106,8 +106,8 @@ export const projectsData = [
     link: 'https://github.com/bbyc4kes/portfolio',
   },
   {
-    title: 'Isida',
-    description: `Isida is a platform that helps people to get legal advice from the best lawyers in the world. It's a platform that connects people with lawyers.`,
+    title: 'Audit Master',
+    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
     tags: [
       'React',
       'TypeScript',
@@ -117,8 +117,8 @@ export const projectsData = [
       'SCRUM Methodology',
       'End-to-End Development',
     ],
-    imageUrl: aiLawyerImg,
-    link: 'mailto:azimov.worksace@gmail.com',
+    imageUrl: auditMasterImg,
+    link: 'https://auditmaster.ai/',
   },
   {
     title: 'Surge',
@@ -163,6 +163,8 @@ export const skillsData = [
   ['MongoDB', '/svgs/mongodb-original.svg'],
   ['PostgreSQL', '/svgs/postgresql.svg'],
   ['MySQL', '/svgs/MySQL.svg'],
+  ['Tanstack Query', '/svgs/react-query-seeklogo.svg'],
+  ['Tanstack Table', '/svgs/db-table-svgrepo-com.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
   ['Docker', '/svgs/Docker.svg'],
   ['Clerk', '/svgs/clerk.svg'],
