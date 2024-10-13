@@ -62,8 +62,8 @@ export default function Project({
             <div className="mb-5 max-w-md rounded-xl shadow-md overflow-hidden">
               <h2 className="text-xl mb-4">My Responsibilities</h2>
               <ul className="space-y-4">
-                {responsibilities.map((responsibility) => (
-                  <li className="flex items-center p-4 bg-gray-900 rounded-lg shadow w-fit">
+                {responsibilities.map((responsibility, index) => (
+                  <li className="flex items-center p-4 bg-gray-900 rounded-lg shadow w-fit" key={index}>
                     {responsibility}
                   </li>
                 ))}
