@@ -15,7 +15,7 @@ import SectionDivider from '@/common/components/shared/section-divider';
 export default function Experience() {
   const { ref } = useSectionInView('experience');
   const { theme } = useTheme();
-  const ihasMounted = useHasMounted();
+  const hasMounted = useHasMounted();
 
   return (
     <section
@@ -24,8 +24,8 @@ export default function Experience() {
       className="w-full scroll-mt-20 dark:bg-darkBg dark:text-white"
     >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline animate={false}>
-        {ihasMounted &&
+      <VerticalTimeline animate={false} lineColor='#ffffff09'>
+        {hasMounted &&
           experiencesData.map((item, index) => (
             <React.Fragment key={index}>
               <VerticalTimelineElement

@@ -13,9 +13,17 @@ import jitsi from '@/../public/images/jitsi.png';
 import ukg from '@/../public/images/ukg.png';
 import mas from '@/../public/images/mas.png';
 import {
+  BicepsFlexed,
   BookIcon,
-  BriefcaseBusinessIcon,
+  BookOpenText,
+  Cog,
+  GitFork,
+  HandHelping,
+  Handshake,
   LaptopMinimalIcon,
+  Share,
+  Share2,
+  SquareActivity
 } from 'lucide-react';
 
 export const links = [
@@ -47,25 +55,86 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'WhirrCrew',
-    location: 'Prague, Czechia',
-    description: `Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration. `,
-    icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Jun 2024 - Present',
+    title: 'System Analyst',
+    location: 'Central Provident Fund Board, Singapore',
+    description: `
+    This position main responsibility is to make sure the entire CPFB website is 
+    running in smooth condition without having any daily basis issues. In this role 
+    I have to monitor, investigate and fix issues as well as contribute to the recurrent 
+    routines like verifying security threats, monitor system misbehavior and remedy them. 
+    `,
+    icon: React.createElement(SquareActivity),
+    date: 'Jan 2024–Now',
   },
   {
-    title: 'NAU',
-    location: 'Kyiv, Ukraine',
-    description: `Bachelor's degree in Cybersecurity. Studying on the faculty of Cyber Security and Software Engineering.`,
-    icon: React.createElement(BookIcon),
-    date: 'Sep 2022 - Present',
+    title: 'Associate Tech Lead',
+    location: 'Zone24x7, Colombo',
+    description: `
+    Main role is to work with the team architect and deliver the holistic goals with the help 
+    of the rest of the team members and work with cross functional teams and lead the entire team 
+    towards short-term as well as long-term goals.
+    `,
+    icon: React.createElement(GitFork),
+    date: 'May 2023–Dec 2023',
   },
   {
-    title: 'Self-studying',
-    location: 'Czechia',
-    description: `Digging into Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
-    icon: React.createElement(LaptopMinimalIcon),
-    date: 'Jul 2022 - Present',
+    title: 'Senior Software Engineer',
+    location: 'KEEN MIND MOBILE, Colombo',
+    description: `Role was to complete one project which I used to work in IronOne Technologies, previously. They wanted
+    my help to complete this ongoing project before timeline. I and IronOne Technologies
+    were working through Keen Mind Mobile Solutions to complete it. This was mainly a part-time contract`,
+    icon: React.createElement(Handshake),
+    date: 'Jun 2023 - Dec 2023',
+  },
+  {
+    title: 'Senior Software Engineer',
+    location: 'IronOne Technologies, Colombo',
+    description: `This role focuses on leading the frontend development team, 
+    contributing to backend projects, and representing the company in client 
+    meetings to build strong relationships. Key responsibilities include mentoring
+     junior engineers, solving technical problems, and ensuring on-time project 
+     delivery within budget by collaborating with cross-functional teams. 
+     Additionally, it involves staying updated with technology trends and 
+     working closely with the team leader to overcome development challenges.`,
+    icon: React.createElement(Cog),
+    date: 'Oct 2021 - May 2023',
+  },
+  {
+    title: 'Senior Software Engineer',
+    location: 'Infosoft Lanka Pvt Ltd, Colombo',
+    description: `This role involved managing a small front-end team and working directly with client
+    to understand the requirements and directly handle, design, develop, test and deploy all the phases within the team.
+    This role did not have any cross-functional support for any other day to day job.`,
+    icon: React.createElement(BicepsFlexed),
+    date: 'Apr 2020 - Oct 2021',
+  },
+  {
+    title: 'Software Engineer',
+    location: 'Infosoft Lanka Pvt Ltd, Colombo',
+    description: `Understand the requirements clearly from the BA teams and work with senior players 
+    by implementing the design demonstrated by the lead roles. Support cross-functional teams to 
+    collaborate with technical teams to make the work flow smoother.`,
+    icon: React.createElement(Cog),
+    date: 'Jul 2017 - Apr 2020',
+  },
+  {
+    title: 'Associate Software Engineer',
+    location: 'Infosoft Lanka Pvt Ltd, Colombo',
+    description: `The role was a part-time one. After my internship ended my boss wanted me to 
+    stay and work in the projects to be commenced at that time. Since I was also working in my final year academics
+    I had to take this as a part-time opportunity. It was on-premise so I worked in office at night and on weekends to 
+    complete the office hours. Main job was to contribute to the development duties, implementation and bug fixing.`,
+    icon: React.createElement(HandHelping),
+    date: 'Aug 2016 - Jul 2017',
+  },
+  {
+    title: 'Software Engineering Trainee',
+    location: 'Infosoft Lanka Pvt Ltd, Colombo',
+    description: `This role was my very first job role and was my internship. Role was to understand the requirements of the given projects,
+    understand the corporate work-flow and how's is the whole software development process is working out. And contribute
+    to the implementation of the code with the given scopes and occasional challenges.`,
+    icon: React.createElement(BookOpenText),
+    date: 'Feb 2016 - Jul 2016',
   },
 ] as const;
 
