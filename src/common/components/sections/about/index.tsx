@@ -44,17 +44,19 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  I&apos;m Full-stack developer with expertise in TypeScript,
-                  React, Next.js, Node.js, and database technologies
-                  (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data
-                  access. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
-                </span>
-                <span>
-                  Seeking for Web Development opportunities where I can leverage
-                  my skills to create meaningful connections between products
-                  and users.
+                Highly motivated and experienced software developer with a 
+                strong background in full-stack development and a passion for 
+                solving complex problems. With 4 years of academic  experience 
+                and substantial number of years of professional experience since 2016, 
+                I have a solid foundation in computer science principles and a track record 
+                of delivering high-quality software solutions on time. 
+                <br />
+                <br />
+                I am skilled
+                 in a variety of programming languages and technologies, including C#, 
+                 TypeScript, JavaScript, and related frameworks, and I have experience 
+                 working on both small and large-scale projects. I am a proactive team 
+                 player who is always willing to take on new challenges and learn new skills.
                 </span>
                 <p className="flex flex-col items-start sm:items-center lg:items-start">
                   <span>So if you are interested,</span>
@@ -74,7 +76,7 @@ export default function About() {
             </div>
             <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
               <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-60"></div>
+                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-40"></div>
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}

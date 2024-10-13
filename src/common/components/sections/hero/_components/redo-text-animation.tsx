@@ -11,16 +11,18 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0);
 
   const texts = [
-    "I’m a coding ninja, ready to tackle any challenge!",
-    "Pixels and code are my playground, let’s create magic!",
-    "Simplicity is the ultimate sophistication in design.",
-    "Debugging is like a treasure hunt, but with bugs!",
-    "Responsive design is my superpower, no matter the screen size.",
-    "Algorithms are the poetry of programming.",
-    "Teamwork makes the dream work, let’s build something amazing together!",
-    "Refactoring code is like decluttering your digital space.",
-    "Continuous learning keeps me sharp and ready for the future.",
-    "Elegant code is the hallmark of a skilled developer.",
+    "Highly motivated and experienced software developer with",
+    "a strong background in full-stack development and a passion",
+    "for solving complex problems. With 4 years of academic experience",
+    "and over 7 years of professional experience, I have a solid",
+    "foundation in computer science principles and a track record", 
+    "of delivering high-quality software solutions on time.",
+    "I am skilled in a variety of programming languages and",
+    "technologies, including C#, TypeScript, JavaScript, and", 
+    "related frameworks, and I have experience working on", 
+    "both small and large-scale projects. I am a proactive", 
+    "team player who is always willing to take on new",
+    "challenges and learn new skills.",
   ];
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
