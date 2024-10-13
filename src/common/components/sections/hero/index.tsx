@@ -49,7 +49,7 @@ export default function Hero() {
                 Hey!
               </motion.span>
               <br />
-              <TextAnimation delay={1} baseText={`I'm Maksym`} />
+              <TextAnimation delay={1} baseText={`I'm Chandima`} />
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
@@ -59,6 +59,13 @@ export default function Hero() {
                 delay: 0.1,
               }}
             >
+              <a
+                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-gray-700 px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
+                href={"https://blog.chandimae.com"}
+                target="_blank"
+              >
+                <span>Read my blog</span>
+              </a>
               <a
                 className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
                 onClick={(e) => {
@@ -81,14 +88,14 @@ export default function Hero() {
               <div className="flex gap-2">
                 <a
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
-                  href="https://www.linkedin.com/in/maksym-azimov/"
+                  href="https://www.linkedin.com/in/chandima-ekanayake/"
                   target="_blank"
                 >
                   <Linkedin />
                 </a>
                 <a
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
-                  href="https://github.com/bbyc4kes"
+                  href="https://github.com/Chandima1990"
                   target="_blank"
                 >
                   <Image
