@@ -10,9 +10,12 @@ import Footer from '@/common/components/shared/footer';
 import { ModeToggle } from '@/common/theme/mode-toggler';
 
 export const metadata: Metadata = {
-  title: 'Maksym Azimov | Portfolio',
+  title: 'Chandima Ekanayake | Portfolio',
   description:
-    'Check out modern and stylish porfolio of an experienced Web Developer Maksym Azimov! Built using TypeScript, Next.js 14, Framaer Motion and Tailwind CSS.',
+    `I am a highly motivated software developer with a strong background in 
+    full-stack development, experienced in delivering high-quality software 
+    solutions since 2016. Skilled in C#, TypeScript, JavaScript, and related 
+    frameworks, with a proactive approach to tackling challenges and continuous learning.`,
 };
 
 const fontMontserrat = FontMontserrat({
