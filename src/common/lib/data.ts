@@ -14,15 +14,11 @@ import ukg from '@/../public/images/ukg.png';
 import mas from '@/../public/images/mas.png';
 import {
   BicepsFlexed,
-  BookIcon,
   BookOpenText,
   Cog,
   GitFork,
   HandHelping,
   Handshake,
-  LaptopMinimalIcon,
-  Share,
-  Share2,
   SquareActivity
 } from 'lucide-react';
 
@@ -42,6 +38,10 @@ export const links = [
   {
     name: 'Experience',
     id: 'experience',
+  },
+  {
+    name: 'Education',
+    id: 'education',
   },
   {
     name: 'Skills',
@@ -136,6 +136,39 @@ export const experiencesData = [
     icon: React.createElement(BookOpenText),
     date: 'Feb 2016 - Jul 2016',
   },
+] as const;
+
+export const educationsData = [
+  {
+    title: 'BSc (Hons) in Information Technology',
+    location: 'University of Moratuwa, Colombo',
+    description: `
+    After completing my advanced level examination with good grades, I got selected
+     for the degree program of BSc (Hons) in Information Technology at the University of 
+     Moratuwa, Sri Lanka. Which I completed successfully with a second-class degree in 2017.
+    `,
+    icon: React.createElement(SquareActivity),
+    date: '2013-2017',
+  },
+  {
+    title: 'Advanced Level',
+    location: 'Vijayaba National College, Maho',
+    description: `
+    Seated for my advanced level examination in physical science stream with combined maths, Physics and chemistry in 2011.
+    `,
+    icon: React.createElement(GitFork),
+    date: '2007-2011',
+  },
+  {
+    title: 'Ordinary Level',
+    location: 'Yapahuwa Central College, Yapahuwa',
+    description: `
+    Seated for my ordinary level examination in 2011. I took Maths, Sinhala language, English language,
+    Science, Buddhism, History, Social Studies, Drama and Theatre 
+    `,
+    icon: React.createElement(GitFork),
+    date: '2007-2011',
+  }
 ] as const;
 
 export const images = {
