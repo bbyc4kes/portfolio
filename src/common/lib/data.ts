@@ -45,7 +45,7 @@ export const experiencesData = [
   {
     title: 'WhirrCrew',
     location: 'Prague, Czechia',
-    description: `Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration. `,
+    description: `Front-end Web Develpoer position. Responsible for implementation of accessible and interactive interface. Working on various projects with AI integration. `,
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Jun 2024 - Present',
   },
