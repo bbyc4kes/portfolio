@@ -8,11 +8,8 @@ import reactfoodImg from '@/../public/images/react-food.png';
 import surgeImg from '@/../public/images/surge.png';
 import portfolioImg from '@/../public/images/portfolio.png';
 import auditMasterImg from '@/../public/images/audit-master.png';
-import {
-  BookIcon,
-  BriefcaseBusinessIcon,
-  LaptopMinimalIcon,
-} from 'lucide-react';
+import accountingImg from '@/../public/images/accounting.jpg';
+import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
   {
@@ -43,25 +40,35 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'WhirrCrew',
+    title: 'Trustsoft s.r.o.',
     location: 'Prague, Czechia',
-    description: `Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration. `,
+    description:
+      'Front-end Developer. Providing services in the field of information technology services, including administration servers, cloud services, information systems and software development.',
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Oct 2024 - Present',
+  },
+  {
+    title: 'Granton s.r.o.',
+    location: 'Prague, Czechia',
+    description:
+      'Front-end Developer. UI/UX, Frontend Workflow, Architecture & Software Development.',
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Oct 2024 - Present',
+  },
+  {
+    title: 'WhirrCrew s.r.o.',
+    location: 'Prague, Czechia',
+    description:
+      'Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration.',
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Jun 2024 - Present',
   },
   {
     title: 'NAU',
     location: 'Kyiv, Ukraine',
-    description: `Bachelor's degree in Cybersecurity. Studying on the faculty of Cyber Security and Software Engineering.`,
+    description: `Bachelor's degree in Cybersecurity. The faculty of Cyber Security and Software Engineering.`,
     icon: React.createElement(BookIcon),
-    date: 'Sep 2022 - Present',
-  },
-  {
-    title: 'Self-studying',
-    location: 'Czechia',
-    description: `Digging into Programming, Software Engineering and Web Development, picking up a great expertise in TypeScript, React, Next.js, Node.js, and database technologies (MongoDB/PostgreSQL/MySQL) utilizing Prisma for efficient data access.`,
-    icon: React.createElement(LaptopMinimalIcon),
-    date: 'Jul 2022 - Present',
+    date: 'Sep 2022 - Jun 2024',
   },
 ] as const;
 
@@ -74,6 +81,21 @@ export const images = {
 };
 
 export const projectsData = [
+  {
+    title: 'Audit Master',
+    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, Due Diligence & more.`,
+    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'SCRUM Methodology'],
+    imageUrl: auditMasterImg,
+    link: 'https://auditmaster.ai/',
+  },
+  {
+    title: 'Demo Automation of accounting documents processing',
+    description:
+      'Upload any receipt or invoice (even a crumpled one from your pocket) and watch our AI accurately extract its data.',
+    tags: ['TypeScript', 'React', 'Docker', 'Next.js', 'GraphQL', 'Tailwind'],
+    imageUrl: accountingImg,
+    link: 'https://demo.grantonai.cz/',
+  },
   {
     title: 'FileDrive',
     description:
@@ -105,25 +127,11 @@ export const projectsData = [
     imageUrl: portfolioImg,
     link: 'https://github.com/bbyc4kes/portfolio',
   },
-  {
-    title: 'Audit Master',
-    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, and Due Diligence.`,
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'OpenAI',
-      'SCRUM Methodology',
-      'End-to-End Development',
-    ],
-    imageUrl: auditMasterImg,
-    link: 'https://auditmaster.ai/',
-  },
+
   {
     title: 'Surge',
     description:
-      'Welcome Surge! A SaaS Website Builder - service that allows users to build and manage their own websites with integrated payment processing.',
+      'Service that allows users to build and manage their own websites with integrated payment processing.',
     tags: [
       'React',
       'TypeScript',
@@ -136,14 +144,6 @@ export const projectsData = [
     ],
     imageUrl: surgeImg,
     link: 'https://github.com/bbyc4kes/surge',
-  },
-  {
-    title: 'CampWithUs',
-    description:
-      'A platform to find and book campsites, featuring a well-designed backend and seamless client-server communication.',
-    tags: ['JavaScript', 'Express.js', 'MongoDB', 'Cloudinary', 'EJS'],
-    imageUrl: campwithusImg,
-    link: 'https://github.com/bbyc4kes/campwithus',
   },
 ] as const;
 
@@ -166,6 +166,7 @@ export const skillsData = [
   ['Tanstack Query', '/svgs/react-query-seeklogo.svg'],
   ['Tanstack Table', '/svgs/db-table-svgrepo-com.svg'],
   ['Cloudinary', '/svgs/cloudinary.svg'],
+  ['Golang', '/svgs/golang.svg'],
   ['Docker', '/svgs/Docker.svg'],
   ['Clerk', '/svgs/clerk.svg'],
   ['Axios', '/svgs/axios.svg'],
