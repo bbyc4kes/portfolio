@@ -51,7 +51,7 @@ export const experiencesData = [
     title: 'Granton s.r.o.',
     location: 'Prague, Czechia',
     description:
-      'Front-end Developer. UI/UX, Frontend Workflow, Architecture & Software Development.',
+      'Front-end Developer. Delivering flawless UI/UX, Frontend Workflow, Architecture & App Development.',
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Oct 2024 - Present',
   },
@@ -59,7 +59,7 @@ export const experiencesData = [
     title: 'WhirrCrew s.r.o.',
     location: 'Prague, Czechia',
     description:
-      'Front-end Web Develpoer position. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration.',
+      'Front-end Developer. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration.',
     icon: React.createElement(BriefcaseBusinessIcon),
     date: 'Jun 2024 - Present',
   },
