@@ -1,27 +1,38 @@
-name: Deploy
+name: Deploy to VPS
+
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code
+      - name: Check out the code
         uses: actions/checkout@v3
 
-      - name: Use Node
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18  # Adjust based on your Node.js version
 
-      - name: Install & Build
+      - name: Install Dependencies & Build Next.js App
         run: |
           npm install
           npm run build
 
-      - name: Deploy to VPS via SCP
+      - name: Clean Up Old Files on VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            rm -rf /home/chandimae/public_html/portfolio-2/*
+
+      - name: Deploy Files via SCP
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -29,16 +40,26 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           source: "."
           target: "/home/chandimae/public_html/portfolio-2"
-          strip_components: 1
-          overwrite: true  # ✅ Force overwriting existing files
+          exclude: ".git"  # ✅ Exclude git files to avoid permission errors
+          overwrite: true
 
-      - name: Restart PM2
-        uses: appleboy/ssh-action@v0.1.8
+      - name: Set Correct Permissions on VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            chown -R chandimae:chandimae /home/chandimae/public_html/portfolio-2
+            chmod -R 755 /home/chandimae/public_html/portfolio-2
+
+      - name: Install Production Dependencies & Restart PM2
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /home/chandimae/public_html/portfolio-2
-            npm install --omit=dev
+            npm install --omit=dev  # Install only production dependencies
             pm2 restart portfolio || pm2 start npm --name "portfolio" -- run start
