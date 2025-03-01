@@ -62,4 +62,5 @@ jobs:
           script: |
             cd /home/chandimae/public_html/portfolio-2
             npm install --omit=dev  # Install only production dependencies
-            pm2 restart portfolio || pm2 start npm --name "portfolio" -- run start
+            pm2 delete portfolio || true  # Ensure no duplicate process
+            pm2 start npm --name "portfolio" -- run start --update-env
