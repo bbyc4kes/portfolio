@@ -24,7 +24,7 @@ import {
 
 export const links = [
   {
-    name: 'Home1',
+    name: 'Home',
     id: 'home',
   },
   {
