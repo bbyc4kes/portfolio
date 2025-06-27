@@ -61,7 +61,7 @@ export default function Hero() {
             >
               <a
                 className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-gray-700 px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
-                href={"https://blog.chandimae.com"}
+                href={"https://medium.com/@ChandimaEkanayake"}
                 target="_blank"
               >
                 <span>Read my blog</span>
