@@ -64,7 +64,7 @@ export default function Hero() {
                 href={"https://medium.com/@ChandimaEkanayake"}
                 target="_blank"
               >
-                <span>Read my blog</span>
+                <span>Read my medium</span>
               </a>
               <a
                 className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
