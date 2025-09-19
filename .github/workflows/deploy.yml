@@ -28,7 +28,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
+          key: ${{ secrets.VPS_TEST_KEY }}
           script: |
             rm -rf /home/chandimae/public_html/portfolio-2/*
 
@@ -37,7 +37,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
+          key: ${{ secrets.VPS_TEST_KEY }}
           source: "."
           target: "/home/chandimae/public_html/portfolio-2"
           exclude: ".git"  # ✅ Exclude git files to avoid permission errors
@@ -48,7 +48,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
+          key: ${{ secrets.VPS_TEST_KEY }}
           script: |
             chown -R chandimae:chandimae /home/chandimae/public_html/portfolio-2
             chmod -R 755 /home/chandimae/public_html/portfolio-2
@@ -58,7 +58,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
+          key: ${{ secrets.VPS_TEST_KEY }}
           script: |
             cd /home/chandimae/public_html/portfolio-2
             npm install --omit=dev  # Install only production dependencies
